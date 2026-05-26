@@ -1,8 +1,11 @@
 __pycache__/
 *.py[cod]
-.env
+/schedule-predictor/.env
 .venv/
 .DS_Store
 *.log
-/src/editor_server.py
+/schedule-predictor/src/editor_server.py
 /editor.html
+/api/
+/schedule-predictor/src/scrape_real_schedule.py
+/fantasy-watcher/

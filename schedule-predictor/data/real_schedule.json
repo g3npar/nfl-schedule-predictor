@@ -1,0 +1,3293 @@
+[
+  {
+    "week": 1,
+    "away": "Patriots",
+    "home": "Seahawks",
+    "cat": "SNF",
+    "_broadcasts": [
+      "NBC"
+    ],
+    "_notes": [],
+    "_date": "2026-09-10T00:20Z",
+    "_day": "Thursday"
+  },
+  {
+    "week": 1,
+    "away": "49ers",
+    "home": "Rams",
+    "cat": "SNF",
+    "_broadcasts": [
+      "Netflix"
+    ],
+    "_notes": [
+      "NFL Melbourne Game"
+    ],
+    "_date": "2026-09-11T00:35Z",
+    "_day": "Friday"
+  },
+  {
+    "week": 1,
+    "away": "Buccaneers",
+    "home": "Bengals",
+    "cat": "1PM",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-09-13T17:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 1,
+    "away": "Saints",
+    "home": "Lions",
+    "cat": "1PM",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-09-13T17:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 1,
+    "away": "Jets",
+    "home": "Titans",
+    "cat": "1PM",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-09-13T17:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 1,
+    "away": "Ravens",
+    "home": "Colts",
+    "cat": "1PM",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-09-13T17:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 1,
+    "away": "Falcons",
+    "home": "Steelers",
+    "cat": "1PM",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-09-13T17:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 1,
+    "away": "Bears",
+    "home": "Panthers",
+    "cat": "1PM",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-09-13T17:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 1,
+    "away": "Browns",
+    "home": "Jaguars",
+    "cat": "1PM",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-09-13T17:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 1,
+    "away": "Bills",
+    "home": "Texans",
+    "cat": "1PM",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-09-13T17:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 1,
+    "away": "Dolphins",
+    "home": "Raiders",
+    "cat": "4PM",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-09-13T20:25Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 1,
+    "away": "Packers",
+    "home": "Vikings",
+    "cat": "4PM",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-09-13T20:25Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 1,
+    "away": "Commanders",
+    "home": "Eagles",
+    "cat": "4PM",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-09-13T20:25Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 1,
+    "away": "Cardinals",
+    "home": "Chargers",
+    "cat": "4PM",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-09-13T20:25Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 1,
+    "away": "Cowboys",
+    "home": "Giants",
+    "cat": "SNF",
+    "_broadcasts": [
+      "NBC"
+    ],
+    "_notes": [],
+    "_date": "2026-09-14T00:20Z",
+    "_day": "Monday"
+  },
+  {
+    "week": 1,
+    "away": "Broncos",
+    "home": "Chiefs",
+    "cat": "MNF",
+    "_broadcasts": [
+      "ESPN",
+      "ABC"
+    ],
+    "_notes": [],
+    "_date": "2026-09-15T00:15Z",
+    "_day": "Tuesday"
+  },
+  {
+    "week": 2,
+    "away": "Lions",
+    "home": "Bills",
+    "cat": "TNF",
+    "_broadcasts": [
+      "Prime Video"
+    ],
+    "_notes": [],
+    "_date": "2026-09-18T00:15Z",
+    "_day": "Friday"
+  },
+  {
+    "week": 2,
+    "away": "Panthers",
+    "home": "Falcons",
+    "cat": "1PM",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-09-20T17:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 2,
+    "away": "Vikings",
+    "home": "Bears",
+    "cat": "1PM",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-09-20T17:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 2,
+    "away": "Eagles",
+    "home": "Titans",
+    "cat": "1PM",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-09-20T17:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 2,
+    "away": "Steelers",
+    "home": "Patriots",
+    "cat": "1PM",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-09-20T17:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 2,
+    "away": "Packers",
+    "home": "Jets",
+    "cat": "1PM",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-09-20T17:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 2,
+    "away": "Browns",
+    "home": "Buccaneers",
+    "cat": "1PM",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-09-20T17:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 2,
+    "away": "Saints",
+    "home": "Ravens",
+    "cat": "1PM",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-09-20T17:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 2,
+    "away": "Bengals",
+    "home": "Texans",
+    "cat": "1PM",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-09-20T17:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 2,
+    "away": "Jaguars",
+    "home": "Broncos",
+    "cat": "4PM",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-09-20T20:05Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 2,
+    "away": "Raiders",
+    "home": "Chargers",
+    "cat": "4PM",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-09-20T20:05Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 2,
+    "away": "Commanders",
+    "home": "Cowboys",
+    "cat": "4PM",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-09-20T20:25Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 2,
+    "away": "Seahawks",
+    "home": "Cardinals",
+    "cat": "4PM",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-09-20T20:25Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 2,
+    "away": "Dolphins",
+    "home": "49ers",
+    "cat": "4PM",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-09-20T20:25Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 2,
+    "away": "Colts",
+    "home": "Chiefs",
+    "cat": "SNF",
+    "_broadcasts": [
+      "NBC"
+    ],
+    "_notes": [],
+    "_date": "2026-09-21T00:20Z",
+    "_day": "Monday"
+  },
+  {
+    "week": 2,
+    "away": "Giants",
+    "home": "Rams",
+    "cat": "MNF",
+    "_broadcasts": [
+      "ESPN",
+      "ABC"
+    ],
+    "_notes": [],
+    "_date": "2026-09-22T00:15Z",
+    "_day": "Tuesday"
+  },
+  {
+    "week": 3,
+    "away": "Falcons",
+    "home": "Packers",
+    "cat": "TNF",
+    "_broadcasts": [
+      "Prime Video"
+    ],
+    "_notes": [],
+    "_date": "2026-09-25T00:15Z",
+    "_day": "Friday"
+  },
+  {
+    "week": 3,
+    "away": "Chargers",
+    "home": "Bills",
+    "cat": "1PM",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-09-27T17:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 3,
+    "away": "Panthers",
+    "home": "Browns",
+    "cat": "1PM",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-09-27T17:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 3,
+    "away": "Jets",
+    "home": "Lions",
+    "cat": "1PM",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-09-27T17:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 3,
+    "away": "Texans",
+    "home": "Colts",
+    "cat": "1PM",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-09-27T17:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 3,
+    "away": "Chiefs",
+    "home": "Dolphins",
+    "cat": "1PM",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-09-27T17:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 3,
+    "away": "Titans",
+    "home": "Giants",
+    "cat": "1PM",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-09-27T17:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 3,
+    "away": "Bengals",
+    "home": "Steelers",
+    "cat": "1PM",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-09-27T17:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 3,
+    "away": "Seahawks",
+    "home": "Commanders",
+    "cat": "1PM",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-09-27T17:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 3,
+    "away": "Patriots",
+    "home": "Jaguars",
+    "cat": "1PM",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-09-27T17:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 3,
+    "away": "Cardinals",
+    "home": "49ers",
+    "cat": "4PM",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-09-27T20:05Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 3,
+    "away": "Vikings",
+    "home": "Buccaneers",
+    "cat": "4PM",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-09-27T20:05Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 3,
+    "away": "Ravens",
+    "home": "Cowboys",
+    "cat": "Other",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [
+      "NFL Rio Game"
+    ],
+    "_date": "2026-09-27T20:25Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 3,
+    "away": "Raiders",
+    "home": "Saints",
+    "cat": "4PM",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-09-27T20:25Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 3,
+    "away": "Rams",
+    "home": "Broncos",
+    "cat": "SNF",
+    "_broadcasts": [
+      "NBC"
+    ],
+    "_notes": [],
+    "_date": "2026-09-28T00:20Z",
+    "_day": "Monday"
+  },
+  {
+    "week": 3,
+    "away": "Eagles",
+    "home": "Bears",
+    "cat": "MNF",
+    "_broadcasts": [
+      "ESPN",
+      "ABC"
+    ],
+    "_notes": [],
+    "_date": "2026-09-29T00:15Z",
+    "_day": "Tuesday"
+  },
+  {
+    "week": 4,
+    "away": "Steelers",
+    "home": "Browns",
+    "cat": "TNF",
+    "_broadcasts": [
+      "Prime Video"
+    ],
+    "_notes": [],
+    "_date": "2026-10-02T00:15Z",
+    "_day": "Friday"
+  },
+  {
+    "week": 4,
+    "away": "Colts",
+    "home": "Commanders",
+    "cat": "Other",
+    "_broadcasts": [
+      "NFL Net"
+    ],
+    "_notes": [
+      "NFL London Games"
+    ],
+    "_date": "2026-10-04T13:30Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 4,
+    "away": "Patriots",
+    "home": "Bills",
+    "cat": "1PM",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-10-04T17:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 4,
+    "away": "Jets",
+    "home": "Bears",
+    "cat": "1PM",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-10-04T17:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 4,
+    "away": "Jaguars",
+    "home": "Bengals",
+    "cat": "1PM",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-10-04T17:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 4,
+    "away": "Cardinals",
+    "home": "Giants",
+    "cat": "1PM",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-10-04T17:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 4,
+    "away": "Rams",
+    "home": "Eagles",
+    "cat": "1PM",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-10-04T17:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 4,
+    "away": "Packers",
+    "home": "Buccaneers",
+    "cat": "1PM",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-10-04T17:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 4,
+    "away": "Titans",
+    "home": "Ravens",
+    "cat": "1PM",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-10-04T17:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 4,
+    "away": "Cowboys",
+    "home": "Texans",
+    "cat": "1PM",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-10-04T17:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 4,
+    "away": "Dolphins",
+    "home": "Vikings",
+    "cat": "4PM",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-10-04T20:05Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 4,
+    "away": "Chiefs",
+    "home": "Raiders",
+    "cat": "4PM",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-10-04T20:25Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 4,
+    "away": "Broncos",
+    "home": "49ers",
+    "cat": "4PM",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-10-04T20:25Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 4,
+    "away": "Chargers",
+    "home": "Seahawks",
+    "cat": "4PM",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-10-04T20:25Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 4,
+    "away": "Lions",
+    "home": "Panthers",
+    "cat": "SNF",
+    "_broadcasts": [
+      "NBC"
+    ],
+    "_notes": [],
+    "_date": "2026-10-05T00:20Z",
+    "_day": "Monday"
+  },
+  {
+    "week": 4,
+    "away": "Falcons",
+    "home": "Saints",
+    "cat": "MNF",
+    "_broadcasts": [
+      "ESPN"
+    ],
+    "_notes": [],
+    "_date": "2026-10-06T00:15Z",
+    "_day": "Tuesday"
+  },
+  {
+    "week": 5,
+    "away": "Buccaneers",
+    "home": "Cowboys",
+    "cat": "TNF",
+    "_broadcasts": [
+      "Prime Video"
+    ],
+    "_notes": [],
+    "_date": "2026-10-09T00:15Z",
+    "_day": "Friday"
+  },
+  {
+    "week": 5,
+    "away": "Eagles",
+    "home": "Jaguars",
+    "cat": "Other",
+    "_broadcasts": [
+      "NFL Net"
+    ],
+    "_notes": [
+      "NFL London Games"
+    ],
+    "_date": "2026-10-11T13:30Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 5,
+    "away": "Texans",
+    "home": "Titans",
+    "cat": "1PM",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-10-11T17:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 5,
+    "away": "Bengals",
+    "home": "Dolphins",
+    "cat": "1PM",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-10-11T17:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 5,
+    "away": "Raiders",
+    "home": "Patriots",
+    "cat": "1PM",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-10-11T17:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 5,
+    "away": "Vikings",
+    "home": "Saints",
+    "cat": "1PM",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-10-11T17:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 5,
+    "away": "Browns",
+    "home": "Jets",
+    "cat": "1PM",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-10-11T17:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 5,
+    "away": "Colts",
+    "home": "Steelers",
+    "cat": "1PM",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-10-11T17:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 5,
+    "away": "Giants",
+    "home": "Commanders",
+    "cat": "1PM",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-10-11T17:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 5,
+    "away": "Broncos",
+    "home": "Chargers",
+    "cat": "4PM",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-10-11T20:05Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 5,
+    "away": "Bears",
+    "home": "Packers",
+    "cat": "4PM",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-10-11T20:25Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 5,
+    "away": "Lions",
+    "home": "Cardinals",
+    "cat": "4PM",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-10-11T20:25Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 5,
+    "away": "49ers",
+    "home": "Seahawks",
+    "cat": "4PM",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-10-11T20:25Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 5,
+    "away": "Ravens",
+    "home": "Falcons",
+    "cat": "SNF",
+    "_broadcasts": [
+      "NBC"
+    ],
+    "_notes": [],
+    "_date": "2026-10-12T00:20Z",
+    "_day": "Monday"
+  },
+  {
+    "week": 5,
+    "away": "Bills",
+    "home": "Rams",
+    "cat": "MNF",
+    "_broadcasts": [
+      "ESPN",
+      "ABC"
+    ],
+    "_notes": [],
+    "_date": "2026-10-13T00:15Z",
+    "_day": "Tuesday"
+  },
+  {
+    "week": 6,
+    "away": "Seahawks",
+    "home": "Broncos",
+    "cat": "TNF",
+    "_broadcasts": [
+      "Prime Video"
+    ],
+    "_notes": [],
+    "_date": "2026-10-16T00:15Z",
+    "_day": "Friday"
+  },
+  {
+    "week": 6,
+    "away": "Texans",
+    "home": "Jaguars",
+    "cat": "Other",
+    "_broadcasts": [
+      "NFL Net"
+    ],
+    "_notes": [
+      "NFL London Games"
+    ],
+    "_date": "2026-10-18T13:30Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 6,
+    "away": "Bears",
+    "home": "Falcons",
+    "cat": "1PM",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-10-18T17:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 6,
+    "away": "Ravens",
+    "home": "Browns",
+    "cat": "1PM",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-10-18T17:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 6,
+    "away": "Titans",
+    "home": "Colts",
+    "cat": "1PM",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-10-18T17:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 6,
+    "away": "Jets",
+    "home": "Patriots",
+    "cat": "1PM",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-10-18T17:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 6,
+    "away": "Saints",
+    "home": "Giants",
+    "cat": "1PM",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-10-18T17:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 6,
+    "away": "Panthers",
+    "home": "Eagles",
+    "cat": "1PM",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-10-18T17:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 6,
+    "away": "Steelers",
+    "home": "Buccaneers",
+    "cat": "1PM",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-10-18T17:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 6,
+    "away": "Cardinals",
+    "home": "Rams",
+    "cat": "4PM",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-10-18T20:05Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 6,
+    "away": "Chargers",
+    "home": "Chiefs",
+    "cat": "4PM",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-10-18T20:25Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 6,
+    "away": "Bills",
+    "home": "Raiders",
+    "cat": "4PM",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-10-18T20:25Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 6,
+    "away": "Cowboys",
+    "home": "Packers",
+    "cat": "SNF",
+    "_broadcasts": [
+      "NBC"
+    ],
+    "_notes": [],
+    "_date": "2026-10-19T00:20Z",
+    "_day": "Monday"
+  },
+  {
+    "week": 6,
+    "away": "Commanders",
+    "home": "49ers",
+    "cat": "MNF",
+    "_broadcasts": [
+      "ESPN",
+      "ABC"
+    ],
+    "_notes": [],
+    "_date": "2026-10-20T00:15Z",
+    "_day": "Tuesday"
+  },
+  {
+    "week": 7,
+    "away": "Patriots",
+    "home": "Bears",
+    "cat": "TNF",
+    "_broadcasts": [
+      "Prime Video"
+    ],
+    "_notes": [],
+    "_date": "2026-10-23T00:15Z",
+    "_day": "Friday"
+  },
+  {
+    "week": 7,
+    "away": "Steelers",
+    "home": "Saints",
+    "cat": "Other",
+    "_broadcasts": [
+      "NFL Net"
+    ],
+    "_notes": [
+      "NFL Paris Game"
+    ],
+    "_date": "2026-10-25T13:30Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 7,
+    "away": "49ers",
+    "home": "Falcons",
+    "cat": "1PM",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-10-25T17:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 7,
+    "away": "Browns",
+    "home": "Titans",
+    "cat": "1PM",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-10-25T17:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 7,
+    "away": "Colts",
+    "home": "Vikings",
+    "cat": "1PM",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-10-25T17:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 7,
+    "away": "Dolphins",
+    "home": "Jets",
+    "cat": "1PM",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-10-25T17:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 7,
+    "away": "Buccaneers",
+    "home": "Panthers",
+    "cat": "1PM",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-10-25T17:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 7,
+    "away": "Bengals",
+    "home": "Ravens",
+    "cat": "1PM",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-10-25T17:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 7,
+    "away": "Giants",
+    "home": "Texans",
+    "cat": "1PM",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-10-25T17:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 7,
+    "away": "Broncos",
+    "home": "Cardinals",
+    "cat": "4PM",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-10-25T20:05Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 7,
+    "away": "Packers",
+    "home": "Lions",
+    "cat": "4PM",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-10-25T20:25Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 7,
+    "away": "Rams",
+    "home": "Raiders",
+    "cat": "4PM",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-10-25T20:25Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 7,
+    "away": "Chiefs",
+    "home": "Seahawks",
+    "cat": "SNF",
+    "_broadcasts": [
+      "NBC"
+    ],
+    "_notes": [],
+    "_date": "2026-10-26T00:20Z",
+    "_day": "Monday"
+  },
+  {
+    "week": 7,
+    "away": "Cowboys",
+    "home": "Eagles",
+    "cat": "MNF",
+    "_broadcasts": [
+      "ESPN",
+      "ABC"
+    ],
+    "_notes": [],
+    "_date": "2026-10-27T00:15Z",
+    "_day": "Tuesday"
+  },
+  {
+    "week": 8,
+    "away": "Panthers",
+    "home": "Packers",
+    "cat": "TNF",
+    "_broadcasts": [
+      "Prime Video"
+    ],
+    "_notes": [],
+    "_date": "2026-10-30T00:15Z",
+    "_day": "Friday"
+  },
+  {
+    "week": 8,
+    "away": "Ravens",
+    "home": "Bills",
+    "cat": "Other",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-11-01T18:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 8,
+    "away": "Titans",
+    "home": "Bengals",
+    "cat": "Other",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-11-01T18:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 8,
+    "away": "Cardinals",
+    "home": "Cowboys",
+    "cat": "Other",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-11-01T18:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 8,
+    "away": "Vikings",
+    "home": "Lions",
+    "cat": "Other",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-11-01T18:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 8,
+    "away": "Raiders",
+    "home": "Jets",
+    "cat": "Other",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-11-01T18:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 8,
+    "away": "Browns",
+    "home": "Steelers",
+    "cat": "Other",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-11-01T18:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 8,
+    "away": "Falcons",
+    "home": "Buccaneers",
+    "cat": "Other",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-11-01T18:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 8,
+    "away": "Colts",
+    "home": "Jaguars",
+    "cat": "Other",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-11-01T18:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 8,
+    "away": "Chargers",
+    "home": "Rams",
+    "cat": "4PM",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-11-01T21:05Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 8,
+    "away": "Chiefs",
+    "home": "Broncos",
+    "cat": "4PM",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-11-01T21:25Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 8,
+    "away": "Patriots",
+    "home": "Dolphins",
+    "cat": "4PM",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-11-01T21:25Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 8,
+    "away": "Eagles",
+    "home": "Commanders",
+    "cat": "SNF",
+    "_broadcasts": [
+      "NBC"
+    ],
+    "_notes": [],
+    "_date": "2026-11-02T01:20Z",
+    "_day": "Monday"
+  },
+  {
+    "week": 8,
+    "away": "Bears",
+    "home": "Seahawks",
+    "cat": "MNF",
+    "_broadcasts": [
+      "ESPN"
+    ],
+    "_notes": [],
+    "_date": "2026-11-03T01:15Z",
+    "_day": "Tuesday"
+  },
+  {
+    "week": 9,
+    "away": "Jaguars",
+    "home": "Ravens",
+    "cat": "TNF",
+    "_broadcasts": [
+      "Prime Video"
+    ],
+    "_notes": [],
+    "_date": "2026-11-06T01:15Z",
+    "_day": "Friday"
+  },
+  {
+    "week": 9,
+    "away": "Bengals",
+    "home": "Falcons",
+    "cat": "Other",
+    "_broadcasts": [
+      "NFL Net"
+    ],
+    "_notes": [
+      "NFL Madrid Game"
+    ],
+    "_date": "2026-11-08T14:30Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 9,
+    "away": "Cowboys",
+    "home": "Colts",
+    "cat": "Other",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-11-08T18:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 9,
+    "away": "Jets",
+    "home": "Chiefs",
+    "cat": "Other",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-11-08T18:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 9,
+    "away": "Lions",
+    "home": "Dolphins",
+    "cat": "Other",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-11-08T18:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 9,
+    "away": "Browns",
+    "home": "Saints",
+    "cat": "Other",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-11-08T18:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 9,
+    "away": "Giants",
+    "home": "Eagles",
+    "cat": "Other",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-11-08T18:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 9,
+    "away": "Rams",
+    "home": "Commanders",
+    "cat": "Other",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-11-08T18:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 9,
+    "away": "Broncos",
+    "home": "Panthers",
+    "cat": "Other",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-11-08T18:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 9,
+    "away": "Texans",
+    "home": "Chargers",
+    "cat": "4PM",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-11-08T21:05Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 9,
+    "away": "Raiders",
+    "home": "49ers",
+    "cat": "4PM",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-11-08T21:05Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 9,
+    "away": "Packers",
+    "home": "Patriots",
+    "cat": "4PM",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-11-08T21:25Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 9,
+    "away": "Cardinals",
+    "home": "Seahawks",
+    "cat": "4PM",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-11-08T21:25Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 9,
+    "away": "Buccaneers",
+    "home": "Bears",
+    "cat": "SNF",
+    "_broadcasts": [
+      "NBC"
+    ],
+    "_notes": [],
+    "_date": "2026-11-09T01:20Z",
+    "_day": "Monday"
+  },
+  {
+    "week": 9,
+    "away": "Bills",
+    "home": "Vikings",
+    "cat": "MNF",
+    "_broadcasts": [
+      "ESPN",
+      "ABC"
+    ],
+    "_notes": [],
+    "_date": "2026-11-10T01:15Z",
+    "_day": "Tuesday"
+  },
+  {
+    "week": 10,
+    "away": "Commanders",
+    "home": "Giants",
+    "cat": "TNF",
+    "_broadcasts": [
+      "Prime Video"
+    ],
+    "_notes": [],
+    "_date": "2026-11-13T01:15Z",
+    "_day": "Friday"
+  },
+  {
+    "week": 10,
+    "away": "Patriots",
+    "home": "Lions",
+    "cat": "Other",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [
+      "NFL Munich Game"
+    ],
+    "_date": "2026-11-15T14:30Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 10,
+    "away": "Chiefs",
+    "home": "Falcons",
+    "cat": "Other",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-11-15T18:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 10,
+    "away": "Texans",
+    "home": "Browns",
+    "cat": "Other",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-11-15T18:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 10,
+    "away": "Vikings",
+    "home": "Packers",
+    "cat": "Other",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-11-15T18:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 10,
+    "away": "Jaguars",
+    "home": "Titans",
+    "cat": "Other",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-11-15T18:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 10,
+    "away": "Dolphins",
+    "home": "Colts",
+    "cat": "Other",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-11-15T18:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 10,
+    "away": "Panthers",
+    "home": "Saints",
+    "cat": "Other",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-11-15T18:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 10,
+    "away": "Bills",
+    "home": "Jets",
+    "cat": "Other",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-11-15T18:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 10,
+    "away": "Seahawks",
+    "home": "Raiders",
+    "cat": "4PM",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-11-15T21:05Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 10,
+    "away": "Rams",
+    "home": "Cardinals",
+    "cat": "4PM",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-11-15T21:05Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 10,
+    "away": "49ers",
+    "home": "Cowboys",
+    "cat": "4PM",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-11-15T21:25Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 10,
+    "away": "Steelers",
+    "home": "Bengals",
+    "cat": "SNF",
+    "_broadcasts": [
+      "NBC"
+    ],
+    "_notes": [],
+    "_date": "2026-11-16T01:20Z",
+    "_day": "Monday"
+  },
+  {
+    "week": 10,
+    "away": "Chargers",
+    "home": "Ravens",
+    "cat": "MNF",
+    "_broadcasts": [
+      "ESPN"
+    ],
+    "_notes": [],
+    "_date": "2026-11-17T01:15Z",
+    "_day": "Tuesday"
+  },
+  {
+    "week": 11,
+    "away": "Colts",
+    "home": "Texans",
+    "cat": "TNF",
+    "_broadcasts": [
+      "Prime Video"
+    ],
+    "_notes": [],
+    "_date": "2026-11-20T01:15Z",
+    "_day": "Friday"
+  },
+  {
+    "week": 11,
+    "away": "Dolphins",
+    "home": "Bills",
+    "cat": "Other",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-11-22T18:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 11,
+    "away": "Saints",
+    "home": "Bears",
+    "cat": "Other",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-11-22T18:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 11,
+    "away": "Titans",
+    "home": "Cowboys",
+    "cat": "Other",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-11-22T18:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 11,
+    "away": "Buccaneers",
+    "home": "Lions",
+    "cat": "Other",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-11-22T18:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 11,
+    "away": "Cardinals",
+    "home": "Chiefs",
+    "cat": "Other",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-11-22T18:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 11,
+    "away": "Jaguars",
+    "home": "Giants",
+    "cat": "Other",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-11-22T18:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 11,
+    "away": "Ravens",
+    "home": "Panthers",
+    "cat": "Other",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-11-22T18:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 11,
+    "away": "Jets",
+    "home": "Chargers",
+    "cat": "4PM",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-11-22T21:05Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 11,
+    "away": "Raiders",
+    "home": "Broncos",
+    "cat": "4PM",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-11-22T21:25Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 11,
+    "away": "Steelers",
+    "home": "Eagles",
+    "cat": "4PM",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-11-22T21:25Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 11,
+    "away": "Vikings",
+    "home": "49ers",
+    "cat": "SNF",
+    "_broadcasts": [
+      "NBC"
+    ],
+    "_notes": [
+      "NFL Mexico City Game"
+    ],
+    "_date": "2026-11-23T01:20Z",
+    "_day": "Monday"
+  },
+  {
+    "week": 11,
+    "away": "Bengals",
+    "home": "Commanders",
+    "cat": "MNF",
+    "_broadcasts": [
+      "ESPN"
+    ],
+    "_notes": [],
+    "_date": "2026-11-24T01:15Z",
+    "_day": "Tuesday"
+  },
+  {
+    "week": 12,
+    "away": "Packers",
+    "home": "Rams",
+    "cat": "Thanksgiving",
+    "_broadcasts": [
+      "Netflix"
+    ],
+    "_notes": [],
+    "_date": "2026-11-26T01:00Z",
+    "_day": "Thursday"
+  },
+  {
+    "week": 12,
+    "away": "Bears",
+    "home": "Lions",
+    "cat": "1PM",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-11-26T18:00Z",
+    "_day": "Thursday"
+  },
+  {
+    "week": 12,
+    "away": "Eagles",
+    "home": "Cowboys",
+    "cat": "1PM",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-11-26T21:30Z",
+    "_day": "Thursday"
+  },
+  {
+    "week": 12,
+    "away": "Chiefs",
+    "home": "Bills",
+    "cat": "Thanksgiving",
+    "_broadcasts": [
+      "NBC"
+    ],
+    "_notes": [],
+    "_date": "2026-11-27T01:20Z",
+    "_day": "Friday"
+  },
+  {
+    "week": 12,
+    "away": "Broncos",
+    "home": "Steelers",
+    "cat": "TNF",
+    "_broadcasts": [
+      "Prime Video"
+    ],
+    "_notes": [],
+    "_date": "2026-11-27T20:00Z",
+    "_day": "Friday"
+  },
+  {
+    "week": 12,
+    "away": "Saints",
+    "home": "Bengals",
+    "cat": "Other",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-11-29T18:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 12,
+    "away": "Raiders",
+    "home": "Browns",
+    "cat": "Other",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-11-29T18:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 12,
+    "away": "Giants",
+    "home": "Colts",
+    "cat": "Other",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-11-29T18:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 12,
+    "away": "Jets",
+    "home": "Dolphins",
+    "cat": "Other",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-11-29T18:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 12,
+    "away": "Falcons",
+    "home": "Vikings",
+    "cat": "Other",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-11-29T18:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 12,
+    "away": "Ravens",
+    "home": "Texans",
+    "cat": "Other",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-11-29T18:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 12,
+    "away": "Titans",
+    "home": "Jaguars",
+    "cat": "4PM",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-11-29T21:05Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 12,
+    "away": "Commanders",
+    "home": "Cardinals",
+    "cat": "4PM",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-11-29T21:25Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 12,
+    "away": "Seahawks",
+    "home": "49ers",
+    "cat": "4PM",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-11-29T21:25Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 12,
+    "away": "Patriots",
+    "home": "Chargers",
+    "cat": "SNF",
+    "_broadcasts": [
+      "NBC"
+    ],
+    "_notes": [],
+    "_date": "2026-11-30T01:20Z",
+    "_day": "Monday"
+  },
+  {
+    "week": 12,
+    "away": "Panthers",
+    "home": "Buccaneers",
+    "cat": "MNF",
+    "_broadcasts": [
+      "ESPN"
+    ],
+    "_notes": [],
+    "_date": "2026-12-01T01:15Z",
+    "_day": "Tuesday"
+  },
+  {
+    "week": 13,
+    "away": "Chiefs",
+    "home": "Rams",
+    "cat": "TNF",
+    "_broadcasts": [
+      "Prime Video"
+    ],
+    "_notes": [],
+    "_date": "2026-12-04T01:15Z",
+    "_day": "Friday"
+  },
+  {
+    "week": 13,
+    "away": "Lions",
+    "home": "Falcons",
+    "cat": "Other",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-12-06T18:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 13,
+    "away": "Jaguars",
+    "home": "Bears",
+    "cat": "Other",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-12-06T18:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 13,
+    "away": "Bengals",
+    "home": "Browns",
+    "cat": "Other",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-12-06T18:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 13,
+    "away": "Commanders",
+    "home": "Titans",
+    "cat": "Other",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-12-06T18:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 13,
+    "away": "Packers",
+    "home": "Saints",
+    "cat": "Other",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-12-06T18:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 13,
+    "away": "49ers",
+    "home": "Giants",
+    "cat": "Other",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-12-06T18:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 13,
+    "away": "Chargers",
+    "home": "Buccaneers",
+    "cat": "Other",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-12-06T18:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 13,
+    "away": "Dolphins",
+    "home": "Broncos",
+    "cat": "4PM",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-12-06T21:05Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 13,
+    "away": "Eagles",
+    "home": "Cardinals",
+    "cat": "4PM",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-12-06T21:05Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 13,
+    "away": "Panthers",
+    "home": "Vikings",
+    "cat": "4PM",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-12-06T21:25Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 13,
+    "away": "Bills",
+    "home": "Patriots",
+    "cat": "4PM",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-12-06T21:25Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 13,
+    "away": "Texans",
+    "home": "Steelers",
+    "cat": "SNF",
+    "_broadcasts": [
+      "NBC"
+    ],
+    "_notes": [],
+    "_date": "2026-12-07T01:20Z",
+    "_day": "Monday"
+  },
+  {
+    "week": 13,
+    "away": "Cowboys",
+    "home": "Seahawks",
+    "cat": "MNF",
+    "_broadcasts": [
+      "ESPN",
+      "ABC"
+    ],
+    "_notes": [],
+    "_date": "2026-12-08T01:15Z",
+    "_day": "Tuesday"
+  },
+  {
+    "week": 14,
+    "away": "Vikings",
+    "home": "Patriots",
+    "cat": "TNF",
+    "_broadcasts": [
+      "Prime Video"
+    ],
+    "_notes": [],
+    "_date": "2026-12-11T01:15Z",
+    "_day": "Friday"
+  },
+  {
+    "week": 14,
+    "away": "Falcons",
+    "home": "Browns",
+    "cat": "Other",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-12-13T18:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 14,
+    "away": "Titans",
+    "home": "Lions",
+    "cat": "Other",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-12-13T18:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 14,
+    "away": "Bears",
+    "home": "Dolphins",
+    "cat": "Other",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-12-13T18:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 14,
+    "away": "Broncos",
+    "home": "Jets",
+    "cat": "Other",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-12-13T18:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 14,
+    "away": "Colts",
+    "home": "Eagles",
+    "cat": "Other",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-12-13T18:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 14,
+    "away": "Texans",
+    "home": "Commanders",
+    "cat": "Other",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-12-13T18:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 14,
+    "away": "Saints",
+    "home": "Panthers",
+    "cat": "Other",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-12-13T18:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 14,
+    "away": "Buccaneers",
+    "home": "Ravens",
+    "cat": "Other",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-12-13T18:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 14,
+    "away": "Chargers",
+    "home": "Raiders",
+    "cat": "4PM",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-12-13T21:05Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 14,
+    "away": "Chiefs",
+    "home": "Bengals",
+    "cat": "4PM",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-12-13T21:25Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 14,
+    "away": "Rams",
+    "home": "49ers",
+    "cat": "4PM",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-12-13T21:25Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 14,
+    "away": "Giants",
+    "home": "Seahawks",
+    "cat": "4PM",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-12-13T21:25Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 14,
+    "away": "Bills",
+    "home": "Packers",
+    "cat": "SNF",
+    "_broadcasts": [
+      "NBC"
+    ],
+    "_notes": [],
+    "_date": "2026-12-14T01:20Z",
+    "_day": "Monday"
+  },
+  {
+    "week": 14,
+    "away": "Steelers",
+    "home": "Jaguars",
+    "cat": "MNF",
+    "_broadcasts": [
+      "ESPN"
+    ],
+    "_notes": [],
+    "_date": "2026-12-15T01:15Z",
+    "_day": "Tuesday"
+  },
+  {
+    "week": 15,
+    "away": "49ers",
+    "home": "Chargers",
+    "cat": "TNF",
+    "_broadcasts": [
+      "Prime Video"
+    ],
+    "_notes": [],
+    "_date": "2026-12-18T01:15Z",
+    "_day": "Friday"
+  },
+  {
+    "week": 15,
+    "away": "Seahawks",
+    "home": "Eagles",
+    "cat": "Other",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-12-19T22:00Z",
+    "_day": "Saturday"
+  },
+  {
+    "week": 15,
+    "away": "Bears",
+    "home": "Bills",
+    "cat": "Other",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-12-20T01:20Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 15,
+    "away": "Dolphins",
+    "home": "Packers",
+    "cat": "Other",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-12-20T18:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 15,
+    "away": "Colts",
+    "home": "Titans",
+    "cat": "Other",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-12-20T18:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 15,
+    "away": "Browns",
+    "home": "Giants",
+    "cat": "Other",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-12-20T18:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 15,
+    "away": "Ravens",
+    "home": "Steelers",
+    "cat": "Other",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-12-20T18:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 15,
+    "away": "Saints",
+    "home": "Buccaneers",
+    "cat": "Other",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-12-20T18:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 15,
+    "away": "Falcons",
+    "home": "Commanders",
+    "cat": "Other",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-12-20T18:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 15,
+    "away": "Bengals",
+    "home": "Panthers",
+    "cat": "Other",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-12-20T18:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 15,
+    "away": "Jaguars",
+    "home": "Texans",
+    "cat": "Other",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-12-20T18:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 15,
+    "away": "Jets",
+    "home": "Cardinals",
+    "cat": "4PM",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-12-20T21:05Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 15,
+    "away": "Broncos",
+    "home": "Raiders",
+    "cat": "4PM",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-12-20T21:25Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 15,
+    "away": "Cowboys",
+    "home": "Rams",
+    "cat": "4PM",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-12-20T21:25Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 15,
+    "away": "Lions",
+    "home": "Vikings",
+    "cat": "SNF",
+    "_broadcasts": [
+      "NBC"
+    ],
+    "_notes": [],
+    "_date": "2026-12-21T01:20Z",
+    "_day": "Monday"
+  },
+  {
+    "week": 15,
+    "away": "Patriots",
+    "home": "Chiefs",
+    "cat": "MNF",
+    "_broadcasts": [
+      "ESPN",
+      "ABC"
+    ],
+    "_notes": [],
+    "_date": "2026-12-22T01:15Z",
+    "_day": "Tuesday"
+  },
+  {
+    "week": 16,
+    "away": "Texans",
+    "home": "Eagles",
+    "cat": "Christmas",
+    "_broadcasts": [
+      "Prime Video"
+    ],
+    "_notes": [],
+    "_date": "2026-12-25T01:15Z",
+    "_day": "Friday"
+  },
+  {
+    "week": 16,
+    "away": "Packers",
+    "home": "Bears",
+    "cat": "1PM",
+    "_broadcasts": [
+      "Netflix"
+    ],
+    "_notes": [],
+    "_date": "2026-12-25T18:00Z",
+    "_day": "Friday"
+  },
+  {
+    "week": 16,
+    "away": "Bills",
+    "home": "Broncos",
+    "cat": "1PM",
+    "_broadcasts": [
+      "Netflix"
+    ],
+    "_notes": [],
+    "_date": "2026-12-25T21:30Z",
+    "_day": "Friday"
+  },
+  {
+    "week": 16,
+    "away": "Rams",
+    "home": "Seahawks",
+    "cat": "Christmas",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-12-26T01:15Z",
+    "_day": "Saturday"
+  },
+  {
+    "week": 16,
+    "away": "Buccaneers",
+    "home": "Falcons",
+    "cat": "Other",
+    "_broadcasts": [],
+    "_notes": [
+      "Flex Game: 12/26 or 12/27"
+    ],
+    "_date": "2026-12-27T05:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 16,
+    "away": "Bengals",
+    "home": "Colts",
+    "cat": "Other",
+    "_broadcasts": [],
+    "_notes": [
+      "Flex Game: 12/26 or 12/27"
+    ],
+    "_date": "2026-12-27T05:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 16,
+    "away": "Commanders",
+    "home": "Vikings",
+    "cat": "Other",
+    "_broadcasts": [],
+    "_notes": [
+      "Flex Game: 12/26 or 12/27"
+    ],
+    "_date": "2026-12-27T05:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 16,
+    "away": "Panthers",
+    "home": "Steelers",
+    "cat": "Other",
+    "_broadcasts": [],
+    "_notes": [
+      "Flex Game: 12/26 or 12/27"
+    ],
+    "_date": "2026-12-27T05:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 16,
+    "away": "Chargers",
+    "home": "Dolphins",
+    "cat": "Other",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-12-27T18:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 16,
+    "away": "Cardinals",
+    "home": "Saints",
+    "cat": "Other",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-12-27T18:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 16,
+    "away": "Patriots",
+    "home": "Jets",
+    "cat": "Other",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-12-27T18:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 16,
+    "away": "Browns",
+    "home": "Ravens",
+    "cat": "Other",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-12-27T18:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 16,
+    "away": "Titans",
+    "home": "Raiders",
+    "cat": "4PM",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2026-12-27T21:05Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 16,
+    "away": "49ers",
+    "home": "Chiefs",
+    "cat": "4PM",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2026-12-27T21:25Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 16,
+    "away": "Jaguars",
+    "home": "Cowboys",
+    "cat": "SNF",
+    "_broadcasts": [
+      "NBC"
+    ],
+    "_notes": [],
+    "_date": "2026-12-28T01:20Z",
+    "_day": "Monday"
+  },
+  {
+    "week": 16,
+    "away": "Giants",
+    "home": "Lions",
+    "cat": "MNF",
+    "_broadcasts": [
+      "ESPN"
+    ],
+    "_notes": [],
+    "_date": "2026-12-29T01:15Z",
+    "_day": "Tuesday"
+  },
+  {
+    "week": 17,
+    "away": "Ravens",
+    "home": "Bengals",
+    "cat": "TNF",
+    "_broadcasts": [
+      "Prime Video"
+    ],
+    "_notes": [],
+    "_date": "2027-01-01T01:15Z",
+    "_day": "Friday"
+  },
+  {
+    "week": 17,
+    "away": "Broncos",
+    "home": "Patriots",
+    "cat": "Other",
+    "_broadcasts": [],
+    "_notes": [
+      "Flex Game: 1/2 or 1/3"
+    ],
+    "_date": "2027-01-03T05:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 17,
+    "away": "Chiefs",
+    "home": "Chargers",
+    "cat": "Other",
+    "_broadcasts": [],
+    "_notes": [
+      "Flex Game: 1/2 or 1/3"
+    ],
+    "_date": "2027-01-03T05:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 17,
+    "away": "Rams",
+    "home": "Buccaneers",
+    "cat": "Other",
+    "_broadcasts": [],
+    "_notes": [
+      "Flex Game: 1/2 or 1/3"
+    ],
+    "_date": "2027-01-03T05:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 17,
+    "away": "Commanders",
+    "home": "Jaguars",
+    "cat": "Other",
+    "_broadcasts": [],
+    "_notes": [
+      "Flex Game: 1/2 or 1/3"
+    ],
+    "_date": "2027-01-03T05:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 17,
+    "away": "Saints",
+    "home": "Falcons",
+    "cat": "Other",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2027-01-03T18:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 17,
+    "away": "Colts",
+    "home": "Browns",
+    "cat": "Other",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2027-01-03T18:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 17,
+    "away": "Giants",
+    "home": "Cowboys",
+    "cat": "Other",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2027-01-03T18:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 17,
+    "away": "Steelers",
+    "home": "Titans",
+    "cat": "Other",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2027-01-03T18:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 17,
+    "away": "Bills",
+    "home": "Dolphins",
+    "cat": "Other",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2027-01-03T18:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 17,
+    "away": "Vikings",
+    "home": "Jets",
+    "cat": "Other",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2027-01-03T18:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 17,
+    "away": "Seahawks",
+    "home": "Panthers",
+    "cat": "Other",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2027-01-03T18:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 17,
+    "away": "Raiders",
+    "home": "Cardinals",
+    "cat": "4PM",
+    "_broadcasts": [
+      "CBS"
+    ],
+    "_notes": [],
+    "_date": "2027-01-03T21:05Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 17,
+    "away": "Lions",
+    "home": "Bears",
+    "cat": "4PM",
+    "_broadcasts": [
+      "FOX"
+    ],
+    "_notes": [],
+    "_date": "2027-01-03T21:25Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 17,
+    "away": "Eagles",
+    "home": "49ers",
+    "cat": "SNF",
+    "_broadcasts": [
+      "NBC"
+    ],
+    "_notes": [],
+    "_date": "2027-01-04T01:20Z",
+    "_day": "Monday"
+  },
+  {
+    "week": 17,
+    "away": "Texans",
+    "home": "Packers",
+    "cat": "MNF",
+    "_broadcasts": [
+      "ESPN"
+    ],
+    "_notes": [],
+    "_date": "2027-01-05T01:15Z",
+    "_day": "Tuesday"
+  },
+  {
+    "week": 18,
+    "away": "Jets",
+    "home": "Bills",
+    "cat": "Other",
+    "_broadcasts": [],
+    "_notes": [
+      "Flex Game: 1/9 or 1/10"
+    ],
+    "_date": "2027-01-10T05:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 18,
+    "away": "Browns",
+    "home": "Bengals",
+    "cat": "Other",
+    "_broadcasts": [],
+    "_notes": [
+      "Flex Game: 1/9 or 1/10"
+    ],
+    "_date": "2027-01-10T05:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 18,
+    "away": "Chargers",
+    "home": "Broncos",
+    "cat": "Other",
+    "_broadcasts": [],
+    "_notes": [
+      "Flex Game: 1/9 or 1/10"
+    ],
+    "_date": "2027-01-10T05:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 18,
+    "away": "Lions",
+    "home": "Packers",
+    "cat": "Other",
+    "_broadcasts": [],
+    "_notes": [
+      "Flex Game: 1/9 or 1/10"
+    ],
+    "_date": "2027-01-10T05:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 18,
+    "away": "Jaguars",
+    "home": "Colts",
+    "cat": "Other",
+    "_broadcasts": [],
+    "_notes": [
+      "Flex Game: 1/9 or 1/10"
+    ],
+    "_date": "2027-01-10T05:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 18,
+    "away": "Raiders",
+    "home": "Chiefs",
+    "cat": "Other",
+    "_broadcasts": [],
+    "_notes": [
+      "Flex Game: 1/9 or 1/10"
+    ],
+    "_date": "2027-01-10T05:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 18,
+    "away": "Seahawks",
+    "home": "Rams",
+    "cat": "Other",
+    "_broadcasts": [],
+    "_notes": [
+      "Flex Game: 1/9 or 1/10"
+    ],
+    "_date": "2027-01-10T05:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 18,
+    "away": "Bears",
+    "home": "Vikings",
+    "cat": "Other",
+    "_broadcasts": [],
+    "_notes": [
+      "Flex Game: 1/9 or 1/10"
+    ],
+    "_date": "2027-01-10T05:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 18,
+    "away": "Dolphins",
+    "home": "Patriots",
+    "cat": "Other",
+    "_broadcasts": [],
+    "_notes": [
+      "Flex Game: 1/9 or 1/10"
+    ],
+    "_date": "2027-01-10T05:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 18,
+    "away": "Buccaneers",
+    "home": "Saints",
+    "cat": "Other",
+    "_broadcasts": [],
+    "_notes": [
+      "Flex Game: 1/9 or 1/10"
+    ],
+    "_date": "2027-01-10T05:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 18,
+    "away": "Eagles",
+    "home": "Giants",
+    "cat": "Other",
+    "_broadcasts": [],
+    "_notes": [
+      "Flex Game: 1/9 or 1/10"
+    ],
+    "_date": "2027-01-10T05:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 18,
+    "away": "49ers",
+    "home": "Cardinals",
+    "cat": "Other",
+    "_broadcasts": [],
+    "_notes": [
+      "Flex Game: 1/9 or 1/10"
+    ],
+    "_date": "2027-01-10T05:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 18,
+    "away": "Cowboys",
+    "home": "Commanders",
+    "cat": "Other",
+    "_broadcasts": [],
+    "_notes": [
+      "Flex Game: 1/9 or 1/10"
+    ],
+    "_date": "2027-01-10T05:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 18,
+    "away": "Falcons",
+    "home": "Panthers",
+    "cat": "Other",
+    "_broadcasts": [],
+    "_notes": [
+      "Flex Game: 1/9 or 1/10"
+    ],
+    "_date": "2027-01-10T05:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 18,
+    "away": "Steelers",
+    "home": "Ravens",
+    "cat": "Other",
+    "_broadcasts": [],
+    "_notes": [
+      "Flex Game: 1/9 or 1/10"
+    ],
+    "_date": "2027-01-10T05:00Z",
+    "_day": "Sunday"
+  },
+  {
+    "week": 18,
+    "away": "Titans",
+    "home": "Texans",
+    "cat": "Other",
+    "_broadcasts": [],
+    "_notes": [
+      "Flex Game: 1/9 or 1/10"
+    ],
+    "_date": "2027-01-10T05:00Z",
+    "_day": "Sunday"
+  }
+]

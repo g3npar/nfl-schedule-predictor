@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NFL Schedule Editor</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f0f0f;
+      color: #eee;
+      min-height: 100vh;
+    }
+
+    /* ── Login overlay ── */
+    #login-overlay {
+      position: fixed; inset: 0;
+      background: #0f0f0f;
+      display: flex; align-items: center; justify-content: center;
+      z-index: 9999;
+    }
+    #login-box {
+      background: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 10px;
+      padding: 40px 48px;
+      text-align: center;
+      width: 340px;
+    }
+    #login-box h2 { font-size: 1.4rem; margin-bottom: 6px; color: #fff; }
+    #login-box p  { font-size: 0.82rem; color: #888; margin-bottom: 24px; }
+    #login-box input {
+      width: 100%;
+      padding: 10px 14px;
+      border-radius: 6px;
+      border: 1px solid #444;
+      background: #111;
+      color: #fff;
+      font-size: 1rem;
+      margin-bottom: 14px;
+      outline: none;
+    }
+    #login-box input:focus { border-color: #4a9eff; }
+    #login-btn {
+      width: 100%;
+      padding: 10px;
+      background: #1a6fd4;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    #login-btn:hover { background: #1558ab; }
+    #login-error { color: #f55; font-size: 0.83rem; margin-top: 10px; display: none; }
+
+    /* ── App shell ── */
+    #app { display: none; }
+
+    header {
+      background: #111;
+      border-bottom: 2px solid #222;
+      padding: 14px 24px;
+      display: flex; align-items: center; gap: 16px;
+      position: sticky; top: 0; z-index: 100;
+    }
+    header h1 { font-size: 1.15rem; color: #fff; flex: 1; }
+    #save-btn {
+      padding: 9px 22px;
+      background: #16a34a;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    #save-btn:hover    { background: #15803d; }
+    #save-btn:disabled { background: #555; cursor: not-allowed; }
+    #status-msg {
+      font-size: 0.83rem;
+      padding: 6px 12px;
+      border-radius: 5px;
+      display: none;
+    }
+    #status-msg.ok  { background: #14532d; color: #86efac; display: block; }
+    #status-msg.err { background: #450a0a; color: #fca5a5; display: block; }
+    #status-msg.loading { background: #1e3a5f; color: #93c5fd; display: block; }
+
+    /* ── Filter bar ── */
+    #filter-bar {
+      background: #161616;
+      border-bottom: 1px solid #222;
+      padding: 10px 24px;
+      display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+    }
+    #filter-bar label { font-size: 0.82rem; color: #888; }
+    #week-select, #filter-bar select {
+      padding: 5px 10px;
+      background: #222;
+      border: 1px solid #444;
+      border-radius: 5px;
+      color: #eee;
+      font-size: 0.85rem;
+      cursor: pointer;
+    }
+
+    /* ── Main content ── */
+    main { padding: 20px 24px; max-width: 1100px; margin: 0 auto; }
+
+    .week-block {
+      margin-bottom: 32px;
+    }
+    .week-title {
+      font-size: 1rem;
+      font-weight: bold;
+      color: #aaa;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      padding: 6px 0;
+      border-bottom: 1px solid #2a2a2a;
+      margin-bottom: 10px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #161616;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    thead th {
+      background: #222;
+      color: #888;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      padding: 9px 14px;
+      text-align: left;
+    }
+    tbody tr { border-bottom: 1px solid #1f1f1f; }
+    tbody tr:last-child { border-bottom: none; }
+    tbody tr:hover { background: #1d1d1d; }
+    tbody td { padding: 8px 14px; font-size: 0.88rem; vertical-align: middle; }
+
+    .game-str { font-weight: 500; white-space: nowrap; }
+    .away-team { color: #aaa; }
+    .home-team { color: #fff; }
+
+    .time-select {
+      padding: 5px 10px;
+      background: #222;
+      border: 1px solid #3a3a3a;
+      border-radius: 5px;
+      color: #eee;
+      font-size: 0.83rem;
+      cursor: pointer;
+      width: 100%;
+      max-width: 340px;
+      transition: border-color 0.15s;
+    }
+    .time-select:focus { outline: none; border-color: #4a9eff; }
+    .time-select.changed { border-color: #f59e0b; background: #1c1700; }
+
+    .slot-badge {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 99px;
+      font-size: 0.73rem;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+    }
+    .badge-snf  { background: #1e3a5f; color: #93c5fd; }
+    .badge-mnf  { background: #1a1a5f; color: #a5b4fc; }
+    .badge-tnf  { background: #1a3020; color: #86efac; }
+    .badge-intl { background: #3b1a5f; color: #d8b4fe; }
+    .badge-tg   { background: #451a03; color: #fdba74; }
+    .badge-xmas { background: #1a3010; color: #a7f3d0; }
+    .badge-bf   { background: #1a0505; color: #fca5a5; }
+    .badge-std  { background: #1f1f1f; color: #888; }
+
+    .bye-row td {
+      color: #555;
+      font-style: italic;
+      font-size: 0.83rem;
+      padding: 5px 14px;
+    }
+
+    #no-server-banner {
+      background: #450a0a;
+      color: #fca5a5;
+      padding: 12px 24px;
+      font-size: 0.87rem;
+      border-bottom: 1px solid #7f1d1d;
+      display: none;
+    }
+    #no-server-banner a { color: #fca5a5; text-underline-offset: 3px; }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.75rem;
+      color: #444;
+      border-top: 1px solid #1a1a1a;
+      margin-top: 32px;
+    }
+
+    /* ── Tabs ── */
+    #tab-bar {
+      background: #111;
+      border-bottom: 2px solid #1e1e1e;
+      padding: 0 24px;
+      display: flex; gap: 0;
+    }
+    .tab-btn {
+      padding: 11px 20px;
+      background: none;
+      border: none;
+      border-bottom: 3px solid transparent;
+      color: #666;
+      font-size: 0.88rem;
+      font-weight: bold;
+      cursor: pointer;
+      letter-spacing: 0.4px;
+      transition: color 0.15s, border-color 0.15s;
+      margin-bottom: -2px;
+    }
+    .tab-btn:hover { color: #bbb; }
+    .tab-btn.active { color: #fff; border-bottom-color: #4a9eff; }
+
+    /* ── Confirmed games panel ── */
+    #confirmed-panel { display: none; padding: 24px; max-width: 1100px; margin: 0 auto; }
+    #schedule-panel  { display: block; }
+
+    .cg-toolbar {
+      display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+      margin-bottom: 24px;
+    }
+    #solve-btn {
+      padding: 10px 24px;
+      background: #7c3aed;
+      color: #fff; border: none; border-radius: 7px;
+      font-size: 0.95rem; font-weight: bold; cursor: pointer;
+      transition: background 0.2s;
+    }
+    #solve-btn:hover    { background: #6d28d9; }
+    #solve-btn:disabled { background: #444; cursor: not-allowed; }
+    #reset-btn {
+      padding: 10px 20px;
+      background: #7f1d1d;
+      color: #fca5a5; border: none; border-radius: 7px;
+      font-size: 0.88rem; font-weight: bold; cursor: pointer;
+      transition: background 0.2s;
+    }
+    #reset-btn:hover { background: #991b1b; }
+
+    #solver-output {
+      background: #0a0a0a;
+      border: 1px solid #2a2a2a;
+      border-radius: 7px;
+      padding: 14px 18px;
+      font-family: monospace;
+      font-size: 0.8rem;
+      color: #86efac;
+      white-space: pre-wrap;
+      max-height: 260px;
+      overflow-y: auto;
+      display: none;
+      margin-bottom: 20px;
+    }
+
+    /* Add-game form */
+    #add-game-form {
+      background: #161616;
+      border: 1px solid #2a2a2a;
+      border-radius: 8px;
+      padding: 18px 20px;
+      display: flex; gap: 10px; flex-wrap: wrap; align-items: flex-end;
+      margin-bottom: 24px;
+    }
+    #add-game-form label { font-size: 0.78rem; color: #888; display: block; margin-bottom: 4px; }
+    #add-game-form select, #add-game-form input {
+      padding: 7px 10px;
+      background: #222;
+      border: 1px solid #444;
+      border-radius: 5px;
+      color: #eee;
+      font-size: 0.85rem;
+      width: 100%;
+    }
+    .form-field { flex: 1; min-width: 130px; }
+    .form-field-wide { flex: 2; min-width: 200px; }
+    #add-game-btn {
+      padding: 8px 20px;
+      background: #16a34a;
+      color: #fff; border: none; border-radius: 6px;
+      font-size: 0.88rem; font-weight: bold; cursor: pointer;
+      white-space: nowrap; align-self: flex-end;
+    }
+    #add-game-btn:hover { background: #15803d; }
+
+    /* Confirmed games table */
+    #confirmed-count { font-size: 0.82rem; color: #666; margin-bottom: 10px; }
+    #cg-table-wrap table { background: #161616; }
+    .del-btn {
+      padding: 3px 10px;
+      background: #450a0a;
+      color: #fca5a5;
+      border: 1px solid #7f1d1d;
+      border-radius: 4px;
+      font-size: 0.78rem;
+      cursor: pointer;
+    }
+    .del-btn:hover { background: #7f1d1d; }
+    .wk-cell { color: #888; font-size: 0.82rem; text-align: center; }
+  </style>
+</head>
+<body>
+
+<!-- ══ Login Overlay ══ -->
+<div id="login-overlay">
+  <div id="login-box">
+    <h2>🔒 Schedule Editor</h2>
+    <p>Private access only</p>
+    <input type="password" id="pw-input" placeholder="Password" autocomplete="current-password">
+    <button id="login-btn">Unlock</button>
+    <div id="login-error">Incorrect password</div>
+  </div>
+</div>
+
+<!-- ══ App ══ -->
+<div id="app">
+  <div id="no-server-banner">
+    ⚠️ Editor server not running. Save will not work.
+    Start it with: <code>python3 src/editor_server.py</code>
+  </div>
+
+  <header>
+    <h1>🏈 NFL 2026 Schedule Editor</h1>
+    <div id="status-msg"></div>
+    <button type="button" id="save-btn" onclick="saveSchedule()">💾 Save &amp; Regenerate</button>
+  </header>
+
+  <!-- Tab bar -->
+  <div id="tab-bar">
+    <button type="button" class="tab-btn active" onclick="switchTab('schedule', this)">📋 Schedule Editor</button>
+    <button type="button" class="tab-btn" onclick="switchTab('confirmed', this)">📌 Confirmed Games</button>
+  </div>
+
+  <!-- Schedule panel -->
+  <div id="schedule-panel">
+    <div id="filter-bar">
+      <label>Jump to week:</label>
+      <select id="week-select" onchange="jumpToWeek(this.value)">
+        <option value="">All weeks</option>
+      </select>
+      <label style="margin-left:16px;">Filter slot:</label>
+      <select id="slot-filter" onchange="filterBySlot(this.value)">
+        <option value="">All</option>
+        <option value="primetime">Primetime only</option>
+        <option value="intl">International only</option>
+        <option value="1:00 PM ET">1:00 PM</option>
+        <option value="4:05 PM ET">4:05 PM</option>
+        <option value="4:25 PM ET">4:25 PM</option>
+      </select>
+    </div>
+    <main id="main-content"></main>
+  </div>
+
+  <!-- Confirmed Games panel -->
+  <div id="confirmed-panel">
+    <div class="cg-toolbar">
+      <button type="button" id="solve-btn" onclick="runSolver()">⚡ Run ILP Solver &amp; Regenerate</button>
+      <button type="button" id="reset-btn" onclick="resetConfirmed()">🗑 Reset All Confirmed Games</button>
+    </div>
+
+    <div id="solver-output"></div>
+
+    <div id="add-game-form">
+      <div class="form-field">
+        <label>Away Team</label>
+        <select id="fg-away"></select>
+      </div>
+      <div class="form-field">
+        <label>Home Team</label>
+        <select id="fg-home"></select>
+      </div>
+      <div class="form-field" style="min-width:100px;max-width:110px">
+        <label>Week</label>
+        <select id="fg-week"></select>
+      </div>
+      <div class="form-field-wide">
+        <label>Time Slot</label>
+        <select id="fg-slot"></select>
+      </div>
+      <button type="button" id="add-game-btn" onclick="addConfirmedGame()">＋ Add</button>
+    </div>
+
+    <div id="confirmed-count"></div>
+    <div id="cg-table-wrap"></div>
+  </div>
+  <footer>NFL Schedule Editor · Private Access · Changes saved to data/schedule_with_times.txt</footer>
+</div>
+
+<script>
+// ── Constants ────────────────────────────────────────────────────────────────
+
+// Password hash (SHA-256 of the value in your .env EDITOR_PASSWORD).
+// To regenerate after changing your password, run in terminal:
+//   echo -n "yourpassword" | sha256sum
+// then paste the hash below.
+const PASSWORD_HASH = "71831c05d8b32aa4db6dded97652a5ca9d1f181801d72ba79e6a3ea8e7dba424";
+
+const ALL_TEAMS = [
+  "Bears","Lions","Packers","Vikings",
+  "Cardinals","Rams","Seahawks","49ers",
+  "Cowboys","Eagles","Giants","Commanders",
+  "Falcons","Panthers","Saints","Buccaneers",
+  "Ravens","Bengals","Browns","Steelers",
+  "Broncos","Chiefs","Raiders","Chargers",
+  "Bills","Dolphins","Patriots","Jets",
+  "Jaguars","Texans","Titans","Colts",
+];
+
+const ALL_SLOTS = [
+  "1:00 PM ET",
+  "4:05 PM ET",
+  "4:25 PM ET",
+  "8:20 PM ET (Sunday Night Football)",
+  "8:15 PM ET (Monday Night Football)",
+  "8:15 PM ET (Thursday Night Football)",
+  "8:15 PM ET (Wednesday - Thanksgiving Eve)",
+  "12:30 PM ET (Thanksgiving)",
+  "4:30 PM ET (Thanksgiving)",
+  "8:20 PM ET (Thanksgiving Night Football)",
+  "3:00 PM ET (Black Friday)",
+  "1:00 PM ET (Christmas Day Football)",
+  "4:30 PM ET (Christmas Afternoon Football)",
+  "8:20 PM ET (Christmas Night Football)",
+  "8:20 PM ET (Wednesday Kickoff Game)",
+  "TBD (Flex Scheduling - Nighttime)",
+  "4:30 PM ET (Saturday)",
+  "8:00 PM ET (Saturday Night Football)",
+  "9:30 AM ET (London, England)",
+  "9:30 AM ET (Munich, Germany)",
+  "9:30 AM ET (Paris, France)",
+  "9:30 PM ET (Madrid, Spain)",
+  "8:35 PM ET (Melbourne, Australia)",
+  "4:25 PM ET (Rio de Janeiro, Brazil)",
+  "8:15 PM ET (Mexico City, Mexico)",
+  "8:15 PM ET (Sunday Night Football - Mexico City, Mexico)",
+];
+
+const CONFIRMED_SLOTS = [
+  "1:00 PM ET",
+  "4:05 PM ET",
+  "4:25 PM ET",
+  "8:20 PM ET (Sunday Night Football)",
+  "8:15 PM ET (Monday Night Football)",
+  "8:15 PM ET (Thursday Night Football)",
+  "8:00 PM ET (Thanksgiving Eve)",
+  "12:30 PM ET (Thanksgiving)",
+  "4:30 PM ET (Thanksgiving)",
+  "8:20 PM ET (Thanksgiving Night Football)",
+  "3:00 PM ET (Black Friday)",
+  "1:00 PM ET (Christmas Day Football)",
+  "4:30 PM ET (Christmas Afternoon Football)",
+  "8:20 PM ET (Christmas Night Football)",
+  "8:20 PM ET (Wednesday Kickoff Game)",
+  "TBD (Flex Scheduling - Nighttime)",
+  "4:30 PM ET (Saturday)",
+  "8:00 PM ET (Saturday Night Football)",
+  "9:30 AM ET (London, England)",
+  "4:30 PM ET (London, England)",
+  "9:30 AM ET (Munich, Germany)",
+  "9:30 AM ET (Paris, France)",
+  "9:30 PM ET (Madrid, Spain)",
+  "8:35 PM ET (Melbourne, Australia)",
+  "4:25 PM ET (Rio de Janeiro, Brazil)",
+  "8:15 PM ET (Mexico City, Mexico)",
+  "8:15 PM ET (Sunday Night Football - Mexico City, Mexico)",
+];
+
+const SERVER = window.location.port === "8080" ? "" : "http://localhost:8080";
+
+// ── Password ─────────────────────────────────────────────────────────────────
+
+async function sha256(msg) {
+  const buf = await crypto.subtle.digest("SHA-256",
+    new TextEncoder().encode(msg));
+  return [...new Uint8Array(buf)].map(b => b.toString(16).padStart(2,"0")).join("");
+}
+
+async function tryLogin() {
+  const pw = document.getElementById("pw-input").value;
+  const hash = await sha256(pw);
+  if (hash === PASSWORD_HASH) {
+    localStorage.setItem("editor_token", pw);
+    document.getElementById("login-overlay").style.display = "none";
+    document.getElementById("app").style.display = "block";
+    restoreTab();
+    await loadSchedule();
+  } else {
+    document.getElementById("login-error").style.display = "block";
+  }
+}
+
+document.getElementById("login-btn").onclick = tryLogin;
+document.getElementById("pw-input").addEventListener("keydown", e => {
+  if (e.key === "Enter") tryLogin();
+});
+
+// Auto-unlock if token still in localStorage
+(async () => {
+  const saved = localStorage.getItem("editor_token");
+  if (saved) {
+    const hash = await sha256(saved);
+    if (hash === PASSWORD_HASH) {
+      document.getElementById("login-overlay").style.display = "none";
+      document.getElementById("app").style.display = "block";
+      restoreTab();
+      await loadSchedule();
+    }
+  }
+})();
+
+// ── Tab switching ─────────────────────────────────────────────────────────────
+
+function restoreTab() {
+  const tab = localStorage.getItem("editor_tab") || "schedule";
+  const btn = tab === "confirmed"
+    ? document.querySelectorAll(".tab-btn")[1]
+    : document.querySelectorAll(".tab-btn")[0];
+  switchTab(tab, btn);
+}
+
+function switchTab(tab, btn) {
+  document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+  btn.classList.add("active");
+  document.getElementById("schedule-panel").style.display  = tab === "schedule"  ? "block" : "none";
+  document.getElementById("confirmed-panel").style.display = tab === "confirmed" ? "block" : "none";
+  document.getElementById("save-btn").style.display = tab === "schedule" ? "" : "none";
+  localStorage.setItem("editor_tab", tab);
+  if (tab === "confirmed") loadConfirmed();
+}
+
+// ── Confirmed Games ───────────────────────────────────────────────────────────
+
+let confirmedGames = [];
+let confirmedLoaded = false;
+
+function initConfirmedForms() {
+  const awayEl = document.getElementById("fg-away");
+  const homeEl = document.getElementById("fg-home");
+  const weekEl = document.getElementById("fg-week");
+  const slotEl = document.getElementById("fg-slot");
+  if (awayEl.options.length > 1) return;
+  ALL_TEAMS.sort().forEach(t => {
+    awayEl.add(new Option(t, t));
+    homeEl.add(new Option(t, t));
+  });
+  for (let w = 1; w <= 18; w++) weekEl.add(new Option("Week " + w, w));
+  CONFIRMED_SLOTS.forEach(s => slotEl.add(new Option(s, s)));
+}
+
+async function loadConfirmed() {
+  initConfirmedForms();
+  if (confirmedLoaded) { renderConfirmed(); return; }
+  try {
+    const r = await fetch(SERVER + "/api/pinned");
+    if (!r.ok) throw new Error("Server error " + r.status);
+    confirmedGames = await r.json();
+    confirmedLoaded = true;
+  } catch(e) {
+    try {
+      const r2 = await fetch("data/confirmed_games.json");
+      confirmedGames = await r2.json();
+      confirmedLoaded = true;
+    } catch { confirmedGames = []; }
+  }
+  renderConfirmed();
+}
+
+function renderConfirmed() {
+  const sorted = [...confirmedGames].sort((a, b) => a.week - b.week || a.away.localeCompare(b.away));
+  document.getElementById("confirmed-count").textContent =
+    sorted.length + " confirmed game" + (sorted.length === 1 ? "" : "s");
+  const wrap = document.getElementById("cg-table-wrap");
+  if (!sorted.length) {
+    wrap.innerHTML = "<p style='color:#555;font-style:italic;padding:12px 0'>No confirmed games yet.</p>";
+    return;
+  }
+  let html = `<table><thead><tr>
+    <th style='width:50px'>Wk</th>
+    <th>Matchup</th>
+    <th>Time Slot</th>
+    <th style='width:60px'></th>
+  </tr></thead><tbody>`;
+  sorted.forEach(g => {
+    const origIdx = confirmedGames.indexOf(g);
+    const [lbl, cls] = slotBadge(g.slot);
+    const badge = lbl ? `<span class="slot-badge ${cls}">${lbl}</span>` : "";
+    html += `<tr>
+      <td class='wk-cell'>${g.week}</td>
+      <td class='game-str'><span class='away-team'>${g.away}</span> <span style='color:#444'>@</span> <span class='home-team'>${g.home}</span></td>
+      <td style='font-size:0.82rem;color:#aaa'>${g.slot} ${badge}</td>
+      <td><button type="button" class='del-btn' onclick='removeConfirmed(${origIdx})'>✕</button></td>
+    </tr>`;
+  });
+  html += "</tbody></table>";
+  wrap.innerHTML = html;
+}
+
+async function saveConfirmed() {
+  try {
+    const r = await fetch(SERVER + "/api/pinned", {
+      method: "POST",
+      headers: { "Content-Type": "application/json", "X-Editor-Token": localStorage.getItem("editor_token") || "" },
+      body: JSON.stringify(confirmedGames, null, 2),
+    });
+    const j = await r.json();
+    if (!r.ok) throw new Error(j.error);
+    return true;
+  } catch(e) {
+    setStatus("err", "Save failed: " + e.message);
+    return false;
+  }
+}
+
+function addConfirmedGame() {
+  const away = document.getElementById("fg-away").value;
+  const home = document.getElementById("fg-home").value;
+  const week = parseInt(document.getElementById("fg-week").value);
+  const slot = document.getElementById("fg-slot").value;
+  if (away === home) { setStatus("err", "Away and home team cannot be the same"); return; }
+  const dup = confirmedGames.find(g => g.away === away && g.home === home);
+  if (dup) { setStatus("err", `${away} @ ${home} already confirmed in Week ${dup.week}`); return; }
+  confirmedGames.push({ away, home, week, slot });
+  renderConfirmed();
+  // Scroll the newly added row into view
+  const wrap = document.getElementById("cg-table-wrap");
+  const rows = wrap.querySelectorAll("tbody tr");
+  if (rows.length) rows[rows.length - 1].scrollIntoView({ behavior: "smooth", block: "nearest" });
+  saveConfirmed().then(ok => { if (ok) { setStatus("ok", `Added ${away} @ ${home} (Week ${week})`); setTimeout(() => setStatus(""), 3000); } });
+}
+
+function removeConfirmed(idx) {
+  const g = confirmedGames[idx];
+  confirmedGames.splice(idx, 1);
+  renderConfirmed();
+  saveConfirmed().then(ok => { if (ok) { setStatus("ok", `Removed ${g.away} @ ${g.home}`); setTimeout(() => setStatus(""), 2500); } });
+}
+
+function resetConfirmed() {
+  if (!confirm("Reset ALL confirmed games? This cannot be undone.")) return;
+  confirmedGames = [];
+  renderConfirmed();
+  saveConfirmed().then(ok => { if (ok) { setStatus("ok", "All confirmed games cleared"); setTimeout(() => setStatus(""), 3000); } });
+}
+
+async function runSolver() {
+  const btn = document.getElementById("solve-btn");
+  const out = document.getElementById("solver-output");
+  btn.disabled = true;
+  out.style.display = "block";
+  out.style.color = "#86efac";
+  out.textContent = "⏳ Running ILP solver… (this may take up to 5 minutes)";
+  setStatus("loading", "Running ILP solver…");
+  try {
+    const r = await fetch(SERVER + "/api/solve", {
+      method: "POST",
+      headers: { "X-Editor-Token": localStorage.getItem("editor_token") || "" },
+    });
+    const j = await r.json();
+    if (!r.ok) {
+      out.style.color = "#fca5a5";
+      out.textContent = "ERROR: " + j.error + (j.stderr ? "\n\n" + j.stderr : "") + (j.stdout ? "\n\nOutput:\n" + j.stdout : "");
+      setStatus("err", "Solver failed: " + j.error);
+    } else {
+      out.style.color = "#86efac";
+      out.textContent = "✓ Schedule generated! " + j.pages_generated + " HTML pages regenerated.\n\n" + (j.solver_output || "");
+      setStatus("ok", `✓ Done — ${j.pages_generated} pages regenerated`);
+      setTimeout(() => setStatus(""), 6000);
+    }
+  } catch(e) {
+    out.style.color = "#fca5a5";
+    out.textContent = "Network error: " + e.message;
+    setStatus("err", "Network error: " + e.message);
+  }
+  btn.disabled = false;
+}
+
+// ── Schedule data ─────────────────────────────────────────────────────────────
+
+let scheduleData = []; // [{week, games: [{away,home,time,original}], byes: []}]
+let originalText = "";
+
+async function loadSchedule() {
+  setStatus("loading", "Loading schedule…");
+  try {
+    const r = await fetch(SERVER + "/api/schedule");
+    if (!r.ok) throw new Error("Server error " + r.status);
+    const text = await r.text();
+    originalText = text;
+    scheduleData = parseSchedule(text);
+    renderAll();
+    setStatus("ok", "Schedule loaded");
+    setTimeout(() => setStatus(""), 2000);
+  } catch (e) {
+    // Fall back to fetching the raw file directly (works when served statically)
+    try {
+      const r2 = await fetch("data/schedule_with_times.txt");
+      if (!r2.ok) throw new Error();
+      const text = await r2.text();
+      originalText = text;
+      scheduleData = parseSchedule(text);
+      renderAll();
+      document.getElementById("no-server-banner").style.display = "block";
+      setStatus("err", "Read-only mode (server offline)");
+    } catch {
+      setStatus("err", "Could not load schedule. Is the server running?");
+    }
+  }
+}
+
+function parseSchedule(text) {
+  const weeks = [];
+  let currentWeek = null;
+  for (const raw of text.split("\n")) {
+    const line = raw;
+    const wm = line.match(/^(Week \d+):$/);
+    if (wm) {
+      if (currentWeek) weeks.push(currentWeek);
+      currentWeek = { week: wm[1], games: [], byes: [] };
+      continue;
+    }
+    const bm = line.match(/^\s+Bye:\s+(.+)$/);
+    if (bm && currentWeek) {
+      currentWeek.byes = bm[1].split(",").map(s => s.trim());
+      continue;
+    }
+    const gm = line.match(/^\s{2}(.+?)\s{2,}(.+)$/);
+    if (gm && currentWeek) {
+      const matchStr = gm[1];
+      const time = gm[2].trim();
+      const atIdx = matchStr.indexOf(" @ ");
+      if (atIdx !== -1) {
+        currentWeek.games.push({
+          away: matchStr.slice(0, atIdx).trim(),
+          home: matchStr.slice(atIdx + 3).trim(),
+          time: time,
+          original: time,
+        });
+      }
+    }
+  }
+  if (currentWeek) weeks.push(currentWeek);
+  return weeks;
+}
+
+function serializeSchedule() {
+  let out = "2026 NFL Schedule with Kickoff Times:\n\n";
+  for (const w of scheduleData) {
+    out += `${w.week}:\n`;
+    for (const g of w.games) {
+      const gameStr = `${g.away} @ ${g.home}`;
+      const pad = Math.max(2, 37 - gameStr.length);
+      out += `  ${gameStr}${" ".repeat(pad)}${g.time}\n`;
+    }
+    if (w.byes.length) {
+      out += `  Bye: ${w.byes.join(", ")}\n`;
+    }
+    out += "\n";
+  }
+  return out;
+}
+
+// ── Rendering ─────────────────────────────────────────────────────────────────
+
+function slotBadge(time) {
+  const t = time.toLowerCase();
+  if (t.includes("sunday night") || t.includes("sunday night football - mexico"))       return ["SNF",  "badge-snf"];
+  if (t.includes("monday night"))       return ["MNF",  "badge-mnf"];
+  if (t.includes("thursday night"))     return ["TNF",  "badge-tnf"];
+  if (t.includes("thanksgiving eve"))   return ["🦃 Eve","badge-tg"];
+  if (t.includes("thanksgiving night")) return ["🦃 Night","badge-tg"];
+  if (t.includes("thanksgiving"))       return ["🦃",   "badge-tg"];
+  if (t.includes("black friday"))       return ["Black Friday","badge-bf"];
+  if (t.includes("christmas"))          return ["🎄",   "badge-xmas"];
+  if (t.includes("wednesday kickoff"))  return ["Kickoff","badge-snf"];
+  if (t.includes("flex"))               return ["Flex", "badge-mnf"];
+  if (t.includes("london") || t.includes("munich") || t.includes("paris") ||
+      t.includes("madrid") || t.includes("melbourne") || t.includes("rio") ||
+      t.includes("mexico"))             return ["🌍 Intl","badge-intl"];
+  return ["", "badge-std"];
+}
+
+function renderAll() {
+  const main = document.getElementById("main-content");
+  const weekSel = document.getElementById("week-select");
+  weekSel.innerHTML = '<option value="">All weeks</option>';
+  main.innerHTML = "";
+
+  for (const w of scheduleData) {
+    // Populate jump dropdown
+    const opt = document.createElement("option");
+    opt.value = w.week.replace(" ", "");
+    opt.textContent = w.week;
+    weekSel.appendChild(opt);
+
+    const block = document.createElement("div");
+    block.className = "week-block";
+    block.id = w.week.replace(" ", "");
+
+    const title = document.createElement("div");
+    title.className = "week-title";
+    title.textContent = w.week;
+    block.appendChild(title);
+
+    const tbl = document.createElement("table");
+    tbl.innerHTML = `<thead><tr>
+      <th style="width:30px">#</th>
+      <th>Matchup</th>
+      <th>Kickoff Time</th>
+      <th style="width:80px">Slot</th>
+    </tr></thead>`;
+    const tbody = document.createElement("tbody");
+
+    for (let i = 0; i < w.games.length; i++) {
+      const g = w.games[i];
+      const tr = document.createElement("tr");
+      tr.dataset.week = w.week;
+      tr.dataset.gameIdx = i;
+
+      const [label, cls] = slotBadge(g.time);
+
+      tr.innerHTML = `
+        <td style="color:#555;font-size:0.8rem">${i+1}</td>
+        <td class="game-str"><span class="away-team">${g.away}</span>
+          <span style="color:#444"> @ </span>
+          <span class="home-team">${g.home}</span></td>
+        <td></td>
+        <td>${label ? `<span class="slot-badge ${cls}">${label}</span>` : ""}</td>`;
+
+      // Time select
+      const td = tr.querySelector("td:nth-child(3)");
+      const sel = document.createElement("select");
+      sel.className = "time-select";
+
+      // Add all standard slots + any custom value not in the list
+      const opts = [...ALL_SLOTS];
+      if (!opts.includes(g.time)) opts.push(g.time);
+      for (const s of opts) {
+        const o = document.createElement("option");
+        o.value = s;
+        o.textContent = s;
+        if (s === g.time) o.selected = true;
+        sel.appendChild(o);
+      }
+      sel.addEventListener("change", () => {
+        const wk = scheduleData.find(x => x.week === tr.dataset.week);
+        if (!wk) return;
+        wk.games[tr.dataset.gameIdx].time = sel.value;
+        const [lbl, c] = slotBadge(sel.value);
+        tr.querySelector(".slot-badge, span.slot-badge") || tr.querySelector("td:nth-child(4)");
+        tr.querySelector("td:nth-child(4)").innerHTML =
+          lbl ? `<span class="slot-badge ${c}">${lbl}</span>` : "";
+        sel.classList.toggle("changed", sel.value !== g.original);
+      });
+      td.appendChild(sel);
+      tbody.appendChild(tr);
+    }
+
+    if (w.byes.length) {
+      const tr = document.createElement("tr");
+      tr.className = "bye-row";
+      tr.innerHTML = `<td></td><td colspan="3">BYE: ${w.byes.join(", ")}</td>`;
+      tbody.appendChild(tr);
+    }
+
+    tbl.appendChild(tbody);
+    block.appendChild(tbl);
+    main.appendChild(block);
+  }
+}
+
+function jumpToWeek(val) {
+  if (!val) { window.scrollTo({top: 0, behavior: "smooth"}); return; }
+  const el = document.getElementById(val);
+  if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+function filterBySlot(val) {
+  const rows = document.querySelectorAll("tbody tr:not(.bye-row)");
+  rows.forEach(tr => {
+    const sel = tr.querySelector(".time-select");
+    if (!sel) return;
+    const t = sel.value.toLowerCase();
+    let show = true;
+    if (val === "primetime")
+      show = t.includes("night") || t.includes("monday") || t.includes("thursday") || t.includes("flex");
+    else if (val === "intl")
+      show = t.includes("london") || t.includes("munich") || t.includes("paris") ||
+             t.includes("madrid") || t.includes("melbourne") || t.includes("rio") || t.includes("mexico");
+    else if (val)
+      show = sel.value === val;
+    tr.style.display = show ? "" : "none";
+  });
+}
+
+// ── Save ──────────────────────────────────────────────────────────────────────
+
+async function saveSchedule() {
+  const btn = document.getElementById("save-btn");
+  btn.disabled = true;
+  setStatus("loading", "Saving & regenerating HTML pages…");
+
+  const text = serializeSchedule();
+  try {
+    const r = await fetch(SERVER + "/api/save", {
+      method: "POST",
+      headers: {
+        "Content-Type": "text/plain",
+        "X-Editor-Token": localStorage.getItem("editor_token") || "",
+      },
+      body: text,
+    });
+    const json = await r.json();
+    if (!r.ok) throw new Error(json.error || r.statusText);
+    originalText = text;
+    // Mark all selects as un-changed
+    document.querySelectorAll(".time-select").forEach(s => s.classList.remove("changed"));
+    // Update originals in data
+    for (const w of scheduleData) for (const g of w.games) g.original = g.time;
+    setStatus("ok", `✓ Saved — ${json.pages_generated} pages regenerated`);
+    setTimeout(() => setStatus(""), 4000);
+  } catch(e) {
+    setStatus("err", "Save failed: " + e.message);
+  }
+  btn.disabled = false;
+}
+
+function setStatus(type, msg="") {
+  const el = document.getElementById("status-msg");
+  el.className = "status-msg";
+  if (!type) { el.style.display = "none"; el.textContent = ""; return; }
+  el.className = type;
+  el.textContent = msg;
+  el.style.display = "block";
+}
+</script>
+</body>
+</html>

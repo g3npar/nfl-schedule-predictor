@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Predicted vs. Official: 2026 NFL Schedule Fairness</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #f5f7fa; --surface: #fff; --text: #222; --text2: #444;
+      --text3: #666; --border: #eee; --heading: #1a1a2e;
+      --stat-bg: #f8f9fc;
+      --pred-box-bg: #e8f0fb; --real-box-bg: #fdf0e8;
+      --pred-pill-bg: #ddeeff; --pred-pill-fg: #1a4a80;
+      --real-pill-bg: #fde8d8; --real-pill-fg: #7a2c00;
+      --shadow: rgba(0,0,0,.08);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f1117; --surface: #1a1d27; --text: #e8e8e8; --text2: #b0b0b0;
+        --text3: #888; --border: #2e3147; --heading: #c8d4f0;
+        --stat-bg: #22253a;
+        --pred-box-bg: #1a2640; --real-box-bg: #2e1a0e;
+        --pred-pill-bg: #1e3560; --pred-pill-fg: #90bcf0;
+        --real-pill-bg: #3a1a08; --real-pill-fg: #f0a060;
+        --shadow: rgba(0,0,0,.4);
+      }
+    }
+    body { font-family: Arial, sans-serif; background: var(--bg); color: var(--text); padding: 24px 20px; }
+    h1 { text-align: center; font-size: 1.9rem; margin-bottom: 6px; color: var(--text); }
+    .subtitle { text-align: center; color: var(--text3); margin-bottom: 32px; font-size: 0.95rem; }
+    .back { display:block; text-align:center; margin-bottom:24px; color:#2a7abf; text-decoration:none; font-size:.95rem; }
+    .back:hover { text-decoration:underline; }
+    .section { max-width: 1100px; margin: 0 auto 40px; background: var(--surface);
+                border-radius: 12px; padding: 24px 28px;
+                box-shadow: 0 2px 16px var(--shadow); }
+    h2 { font-size: 1.25rem; margin-bottom: 16px; color: var(--heading); border-bottom: 2px solid var(--border); padding-bottom: 8px; }
+    h3 { font-size: 1rem; margin: 20px 0 8px; color: var(--text); }
+    p  { line-height: 1.6; color: var(--text2); margin-bottom: 10px; }
+    .verdict-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 16px 0; }
+    .verdict-box { border-radius: 8px; padding: 16px 20px; }
+    .verdict-box.pred { background: var(--pred-box-bg); border-left: 4px solid #2a7abf; }
+    .verdict-box.real { background: var(--real-box-bg); border-left: 4px solid #e05c00; }
+    .verdict-title { font-weight: bold; font-size: .95rem; margin-bottom: 6px; color: var(--text); }
+    .gini-val { font-size: 1.6rem; font-weight: bold; }
+    .gini-lbl { font-size: .85rem; margin-top: 2px; }
+    .verdict-box div:last-child { color: var(--text2); }
+    .stat-card { background: var(--stat-bg); border-radius: 8px; padding: 12px 16px; margin: 8px 0; }
+    .stat-label { font-weight: bold; font-size: .9rem; margin-bottom: 8px; color: var(--text); }
+    .stat-row { display: flex; gap: 12px; flex-wrap: wrap; }
+    .stat-pill { padding: 4px 12px; border-radius: 20px; font-size: .88rem; }
+    .stat-pill.pred { background: var(--pred-pill-bg); color: var(--pred-pill-fg); }
+    .stat-pill.real { background: var(--real-pill-bg); color: var(--real-pill-fg); }
+    .stat-pill.winner { font-weight: bold; outline: 2px solid currentColor; }
+    .legend { display: flex; gap: 20px; margin-bottom: 12px; flex-wrap: wrap; }
+    .legend-item { display: flex; align-items: center; gap: 6px; font-size: .88rem; color: var(--text2); }
+    .dot { width: 14px; height: 14px; border-radius: 3px; }
+    @media (max-width: 600px) {
+      .verdict-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <h1>Predicted vs. Official: 2026 NFL Schedule Fairness</h1>
+  <p class="subtitle">How evenly were primetime slots distributed? A comparison of the predicted schedule and the one the NFL actually released.</p>
+  <a class="back" href="../index.html">← Back to schedule</a>
+
+  <div class="section">
+    <h2>Overall Primetime Fairness</h2>
+    <p>
+      The <strong>Gini coefficient</strong> measures how evenly primetime games are spread across all 32 teams.
+      A Gini of 0 means every team gets the exact same number of primetime games; higher values mean more
+      concentration among a few teams. Lower is fairer.
+    </p>
+    <div class="verdict-grid">
+      <div class="verdict-box pred">
+        <div class="verdict-title">Predicted Schedule</div>
+        <div class="gini-val" style="color:#c8960a">0.266</div>
+        <div style="margin-top:10px;font-size:.88rem;">
+          Most featured: Bills, Chargers, Giants<br>
+          Least featured: Cardinals, Titans, Browns
+        </div>
+      </div>
+      <div class="verdict-box real">
+        <div class="verdict-title">Official NFL Schedule</div>
+        <div class="gini-val" style="color:#c8960a">0.324</div>
+        <div style="margin-top:10px;font-size:.88rem;">
+          Most featured: Rams, Chiefs, Cowboys<br>
+          Least featured: Cardinals, Dolphins, Jets
+        </div>
+      </div>
+    </div>
+
+    
+        <div class="stat-card">
+          <div class="stat-label">Primetime Gini coefficient (lower = fairer)</div>
+          <div class="stat-row">
+            <span class="stat-pill pred winner">Predicted: 0.266</span>
+            <span class="stat-pill real ">Official: 0.324</span>
+          </div>
+        </div>
+    
+        <div class="stat-card">
+          <div class="stat-label">Max primetime appearances (any team)</div>
+          <div class="stat-row">
+            <span class="stat-pill pred winner">Predicted: 6</span>
+            <span class="stat-pill real ">Official: 7</span>
+          </div>
+        </div>
+    
+        <div class="stat-card">
+          <div class="stat-label">Min primetime appearances (any team)</div>
+          <div class="stat-row">
+            <span class="stat-pill pred winner">Predicted: 0</span>
+            <span class="stat-pill real ">Official: 0</span>
+          </div>
+        </div>
+  </div>
+
+  <div class="section">
+    <h2>Chart 1 — Primetime Appearances: Predicted vs. Official</h2>
+    <div class="legend">
+      <div class="legend-item"><div class="dot" style="background:#2a7abf"></div> Predicted</div>
+      <div class="legend-item"><div class="dot" style="background:#e05c00"></div> Official</div>
+    </div>
+    <img src="../schedule-predictor/data/charts/1_primetime_side_by_side.png" alt="Primetime side by side" style="max-width:100%;border-radius:8px;box-shadow:0 2px 12px rgba(0,0,0,.12);margin:12px 0">
+    <p>Teams sorted by predicted primetime appearances. The taller the blue bar above the orange, the more the
+    predicted schedule gave a team relative to the real one, and vice versa.</p>
+  </div>
+
+  <div class="section">
+    <h2>Chart 2 — Primetime Breakdown: Predicted</h2>
+    <img src="../schedule-predictor/data/charts/2a_pred_stacked.png" alt="Predicted stacked breakdown" style="max-width:100%;border-radius:8px;box-shadow:0 2px 12px rgba(0,0,0,.12);margin:12px 0">
+  </div>
+
+  <div class="section">
+    <h2>Chart 3 — Primetime Breakdown: Official</h2>
+    <img src="../schedule-predictor/data/charts/2b_real_stacked.png" alt="Official stacked breakdown" style="max-width:100%;border-radius:8px;box-shadow:0 2px 12px rgba(0,0,0,.12);margin:12px 0">
+  </div>
+
+  <div class="section">
+    <h2>Chart 4 — Primetime Gap (Predicted minus Official)</h2>
+    <img src="../schedule-predictor/data/charts/3_primetime_difference.png" alt="Primetime difference" style="max-width:100%;border-radius:8px;box-shadow:0 2px 12px rgba(0,0,0,.12);margin:12px 0">
+    <p>Blue bars indicate teams that received <em>more</em> primetime slots in the predicted schedule.
+    Orange bars indicate teams that received <em>more</em> slots in the official release.</p>
+  </div>
+
+  <div class="section">
+    <h2>Chart 5 — Full Timeslot Distribution</h2>
+    <img src="../schedule-predictor/data/charts/4_slot_distribution.png" alt="Slot distribution" style="max-width:100%;border-radius:8px;box-shadow:0 2px 12px rgba(0,0,0,.12);margin:12px 0">
+    <p>Breakdown of all 17 regular weeks (Week 18 excluded as flex) by timeslot type. The predicted schedule
+    aimed for a more even spread of 1PM and 4PM games across all 32 teams.</p>
+  </div>
+
+  <div class="section">
+    <h2>Chart 6 — Gini Fairness by Slot Type</h2>
+    <img src="../schedule-predictor/data/charts/5_gini_by_slot.png" alt="Gini by slot" style="max-width:100%;border-radius:8px;box-shadow:0 2px 12px rgba(0,0,0,.12);margin:12px 0">
+    <p>Lower Gini = more equitable distribution for that slot type. The predicted schedule generally achieves
+    lower Gini scores across TNF, SNF, MNF, and standard afternoon windows because the ILP solver explicitly
+    constrained how many primetime and afternoon games each team could receive.</p>
+  </div>
+
+</body>
+</html>

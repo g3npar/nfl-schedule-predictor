@@ -1,0 +1,318 @@
+2026 NFL Schedule with Kickoff Times:
+
+Week 1:
+  Patriots @ Seahawks                  8:20 PM ET (Wednesday Kickoff Game)
+  49ers @ Rams                         8:35 PM ET (Melbourne, Australia)
+  Bears @ Panthers                     1:00 PM ET
+  Buccaneers @ Bengals                 1:00 PM ET
+  Saints @ Lions                       1:00 PM ET
+  Bills @ Texans                       1:00 PM ET
+  Ravens @ Colts                       1:00 PM ET
+  Browns @ Jaguars                     1:00 PM ET
+  Falcons @ Steelers                   1:00 PM ET
+  Jets @ Titans                        1:00 PM ET
+  Cardinals @ Chargers                 4:25 PM ET
+  Dolphins @ Raiders                   4:25 PM ET
+  Packers @ Vikings                    4:25 PM ET
+  Commanders @ Eagles                  4:25 PM ET
+  Cowboys @ Giants                     8:20 PM ET (Sunday Night Football)
+  Broncos @ Chiefs                     8:15 PM ET (Monday Night Football)
+
+Week 2:
+  Lions @ Bills                        8:15 PM ET (Thursday Night Football)
+  Panthers @ Falcons                   1:00 PM ET
+  Saints @ Ravens                      1:00 PM ET
+  Vikings @ Bears                      1:00 PM ET
+  Bengals @ Texans                     1:00 PM ET
+  Steelers @ Patriots                  1:00 PM ET
+  Packers @ Jets                       1:00 PM ET
+  Browns @ Buccaneers                  1:00 PM ET
+  Eagles @ Titans                      1:00 PM ET
+  Jaguars @ Broncos                    4:05 PM ET
+  Raiders @ Chargers                   4:05 PM ET
+  Seahawks @ Cardinals                 4:25 PM ET
+  Commanders @ Cowboys                 4:25 PM ET
+  Dolphins @ 49ers                     4:25 PM ET
+  Colts @ Chiefs                       8:20 PM ET (Sunday Night Football)
+  Giants @ Rams                        8:15 PM ET (Monday Night Football)
+
+Week 3:
+  Falcons @ Packers                    8:15 PM ET (Thursday Night Football)
+  Chargers @ Bills                     1:00 PM ET
+  Panthers @ Browns                    1:00 PM ET
+  Jets @ Lions                         1:00 PM ET
+  Texans @ Colts                       1:00 PM ET
+  Patriots @ Jaguars                   1:00 PM ET
+  Chiefs @ Dolphins                    1:00 PM ET
+  Titans @ Giants                      1:00 PM ET
+  Bengals @ Steelers                   1:00 PM ET
+  Seahawks @ Commanders                1:00 PM ET
+  Cardinals @ 49ers                    4:05 PM ET
+  Vikings @ Buccaneers                 4:05 PM ET
+  Raiders @ Saints                     4:25 PM ET
+  Ravens @ Cowboys                     4:25 PM ET (Rio de Janeiro, Brazil)
+  Rams @ Broncos                       8:20 PM ET (Sunday Night Football)
+  Eagles @ Bears                       8:15 PM ET (Monday Night Football)
+
+Week 4:
+  Steelers @ Browns                    8:15 PM ET (Thursday Night Football)
+  Colts @ Commanders                   9:30 AM ET (London, England)
+  Titans @ Ravens                      1:00 PM ET
+  Patriots @ Bills                     1:00 PM ET
+  Jets @ Bears                         1:00 PM ET
+  Jaguars @ Bengals                    1:00 PM ET
+  Cowboys @ Texans                     1:00 PM ET
+  Cardinals @ Giants                   1:00 PM ET
+  Rams @ Eagles                        1:00 PM ET
+  Packers @ Buccaneers                 1:00 PM ET
+  Dolphins @ Vikings                   4:05 PM ET
+  Chiefs @ Raiders                     4:25 PM ET
+  Chargers @ Seahawks                  4:25 PM ET
+  Broncos @ 49ers                      4:25 PM ET
+  Lions @ Panthers                     8:20 PM ET (Sunday Night Football)
+  Falcons @ Saints                     8:15 PM ET (Monday Night Football)
+
+Week 5:
+  Buccaneers @ Cowboys                 8:15 PM ET (Thursday Night Football)
+  Eagles @ Jaguars                     9:30 AM ET (London, England)
+  Bengals @ Dolphins                   1:00 PM ET
+  Raiders @ Patriots                   1:00 PM ET
+  Vikings @ Saints                     1:00 PM ET
+  Browns @ Jets                        1:00 PM ET
+  Colts @ Steelers                     1:00 PM ET
+  Texans @ Titans                      1:00 PM ET
+  Giants @ Commanders                  1:00 PM ET
+  Broncos @ Chargers                   4:05 PM ET
+  Lions @ Cardinals                    4:25 PM ET
+  Bears @ Packers                      4:25 PM ET
+  49ers @ Seahawks                     4:25 PM ET
+  Ravens @ Falcons                     8:20 PM ET (Sunday Night Football)
+  Bills @ Rams                         8:15 PM ET (Monday Night Football)
+  Bye: Panthers, Chiefs
+
+Week 6:
+  Seahawks @ Broncos                   8:15 PM ET (Thursday Night Football)
+  Texans @ Jaguars                     9:30 AM ET (London, England)
+  Bears @ Falcons                      1:00 PM ET
+  Ravens @ Browns                      1:00 PM ET
+  Titans @ Colts                       1:00 PM ET
+  Jets @ Patriots                      1:00 PM ET
+  Saints @ Giants                      1:00 PM ET
+  Panthers @ Eagles                    1:00 PM ET
+  Steelers @ Buccaneers                1:00 PM ET
+  Cardinals @ Rams                     4:05 PM ET
+  Chargers @ Chiefs                    4:25 PM ET
+  Bills @ Raiders                      4:25 PM ET
+  Cowboys @ Packers                    8:20 PM ET (Sunday Night Football)
+  Commanders @ 49ers                   8:15 PM ET (Monday Night Football)
+  Bye: Bengals, Lions, Dolphins, Vikings
+
+Week 7:
+  Patriots @ Bears                     8:15 PM ET (Thursday Night Football)
+  Steelers @ Saints                    9:30 AM ET (Saint-Denis, France)
+  49ers @ Falcons                      1:00 PM ET
+  Bengals @ Ravens                     1:00 PM ET
+  Buccaneers @ Panthers                1:00 PM ET
+  Giants @ Texans                      1:00 PM ET
+  Colts @ Vikings                      1:00 PM ET
+  Dolphins @ Jets                      1:00 PM ET
+  Browns @ Titans                      1:00 PM ET
+  Broncos @ Cardinals                  4:05 PM ET
+  Packers @ Lions                      4:25 PM ET
+  Rams @ Raiders                       4:25 PM ET
+  Chiefs @ Seahawks                    8:20 PM ET (Sunday Night Football)
+  Cowboys @ Eagles                     8:15 PM ET (Monday Night Football)
+  Bye: Bills, Jaguars, Chargers, Commanders
+
+Week 8:
+  Panthers @ Packers                   8:15 PM ET (Thursday Night Football)
+  Ravens @ Bills                       1:00 PM ET
+  Titans @ Bengals                     1:00 PM ET
+  Cardinals @ Cowboys                  1:00 PM ET
+  Vikings @ Lions                      1:00 PM ET
+  Colts @ Jaguars                      1:00 PM ET
+  Raiders @ Jets                       1:00 PM ET
+  Browns @ Steelers                    1:00 PM ET
+  Falcons @ Buccaneers                 1:00 PM ET
+  Chargers @ Rams                      4:05 PM ET
+  Chiefs @ Broncos                     4:25 PM ET
+  Patriots @ Dolphins                  4:25 PM ET
+  Eagles @ Commanders                  8:20 PM ET (Sunday Night Football)
+  Bears @ Seahawks                     8:15 PM ET (Monday Night Football)
+  Bye: Texans, Saints, Giants, 49ers
+
+Week 9:
+  Jaguars @ Ravens                     8:15 PM ET (Thursday Night Football)
+  Bengals @ Falcons                    9:30 AM ET (Madrid, Spain)
+  Broncos @ Panthers                   1:00 PM ET
+  Cowboys @ Colts                      1:00 PM ET
+  Jets @ Chiefs                        1:00 PM ET
+  Lions @ Dolphins                     1:00 PM ET
+  Browns @ Saints                      1:00 PM ET
+  Giants @ Eagles                      1:00 PM ET
+  Rams @ Commanders                    1:00 PM ET
+  Texans @ Chargers                    4:05 PM ET
+  Raiders @ 49ers                      4:05 PM ET
+  Packers @ Patriots                   4:25 PM ET
+  Cardinals @ Seahawks                 4:25 PM ET
+  Buccaneers @ Bears                   8:20 PM ET (Sunday Night Football)
+  Bills @ Vikings                      8:15 PM ET (Monday Night Football)
+  Bye: Steelers, Titans
+
+Week 10:
+  Commanders @ Giants                  8:15 PM ET (Thursday Night Football)
+  Patriots @ Lions                     9:30 AM ET (Munich, Germany)
+  Chiefs @ Falcons                     1:00 PM ET
+  Texans @ Browns                      1:00 PM ET
+  Vikings @ Packers                    1:00 PM ET
+  Dolphins @ Colts                     1:00 PM ET
+  Panthers @ Saints                    1:00 PM ET
+  Bills @ Jets                         1:00 PM ET
+  Jaguars @ Titans                     1:00 PM ET
+  Rams @ Cardinals                     4:05 PM ET
+  Seahawks @ Raiders                   4:05 PM ET
+  49ers @ Cowboys                      4:25 PM ET
+  Steelers @ Bengals                   8:20 PM ET (Sunday Night Football)
+  Chargers @ Ravens                    8:15 PM ET (Monday Night Football)
+  Bye: Bears, Broncos, Eagles, Buccaneers
+
+Week 11:
+  Colts @ Texans                       8:15 PM ET (Thursday Night Football)
+  Dolphins @ Bills                     1:00 PM ET
+  Ravens @ Panthers                    1:00 PM ET
+  Saints @ Bears                       1:00 PM ET
+  Titans @ Cowboys                     1:00 PM ET
+  Buccaneers @ Lions                   1:00 PM ET
+  Cardinals @ Chiefs                   1:00 PM ET
+  Jaguars @ Giants                     1:00 PM ET
+  Jets @ Chargers                      4:05 PM ET
+  Raiders @ Broncos                    4:25 PM ET
+  Steelers @ Eagles                    4:25 PM ET
+  Vikings @ 49ers                      8:20 PM ET (Sunday Night Football - Mexico City, Mexico)
+  Bengals @ Commanders                 8:15 PM ET (Monday Night Football)
+  Bye: Falcons, Browns, Packers, Rams, Patriots, Seahawks
+
+Week 12:
+  Packers @ Rams                       8:00 PM ET (Wednesday Night Football)
+  Bears @ Lions                        1:00 PM ET (Thanksgiving)
+  Eagles @ Cowboys                     4:30 PM ET (Thanksgiving)
+  Chiefs @ Bills                       8:20 PM ET (Thanksgiving Night Football)
+  Broncos @ Steelers                   3:00 PM ET (Black Friday)
+  Saints @ Bengals                     1:00 PM ET
+  Raiders @ Browns                     1:00 PM ET
+  Ravens @ Texans                      1:00 PM ET
+  Giants @ Colts                       1:00 PM ET
+  Jets @ Dolphins                      1:00 PM ET
+  Falcons @ Vikings                    1:00 PM ET
+  Titans @ Jaguars                     4:05 PM ET
+  Commanders @ Cardinals               4:25 PM ET
+  Seahawks @ 49ers                     4:25 PM ET
+  Patriots @ Chargers                  8:20 PM ET (Sunday Night Football)
+  Panthers @ Buccaneers                8:15 PM ET (Monday Night Football)
+
+Week 13:
+  Chiefs @ Rams                        8:15 PM ET (Thursday Night Football)
+  Lions @ Falcons                      1:00 PM ET
+  Jaguars @ Bears                      1:00 PM ET
+  Bengals @ Browns                     1:00 PM ET
+  Packers @ Saints                     1:00 PM ET
+  49ers @ Giants                       1:00 PM ET
+  Chargers @ Buccaneers                1:00 PM ET
+  Commanders @ Titans                  1:00 PM ET
+  Eagles @ Cardinals                   4:05 PM ET
+  Dolphins @ Broncos                   4:05 PM ET
+  Panthers @ Vikings                   4:25 PM ET
+  Bills @ Patriots                     4:25 PM ET
+  Texans @ Steelers                    8:20 PM ET (Sunday Night Football)
+  Cowboys @ Seahawks                   8:15 PM ET (Monday Night Football)
+  Bye: Ravens, Colts, Raiders, Jets
+
+Week 14:
+  Vikings @ Patriots                   8:15 PM ET (Thursday Night Football)
+  Buccaneers @ Ravens                  1:00 PM ET
+  Saints @ Panthers                    1:00 PM ET
+  Falcons @ Browns                     1:00 PM ET
+  Titans @ Lions                       1:00 PM ET
+  Bears @ Dolphins                     1:00 PM ET
+  Broncos @ Jets                       1:00 PM ET
+  Colts @ Eagles                       1:00 PM ET
+  Texans @ Commanders                  1:00 PM ET
+  Chargers @ Raiders                   4:05 PM ET
+  Chiefs @ Bengals                     4:25 PM ET
+  Giants @ Seahawks                    4:25 PM ET
+  Rams @ 49ers                         4:25 PM ET
+  Bills @ Packers                      8:20 PM ET (Sunday Night Football)
+  Steelers @ Jaguars                   8:15 PM ET (Monday Night Football)
+  Bye: Cardinals, Cowboys
+
+Week 15:
+  49ers @ Chargers                     8:15 PM ET (Thursday Night Football)
+  Seahawks @ Eagles                    5:00 PM ET (Saturday)
+  Bears @ Bills                        8:20 PM ET (Saturday Night Football)
+  Bengals @ Panthers                   1:00 PM ET
+  Dolphins @ Packers                   1:00 PM ET
+  Jaguars @ Texans                     1:00 PM ET
+  Browns @ Giants                      1:00 PM ET
+  Ravens @ Steelers                    1:00 PM ET
+  Saints @ Buccaneers                  1:00 PM ET
+  Colts @ Titans                       1:00 PM ET
+  Falcons @ Commanders                 1:00 PM ET
+  Jets @ Cardinals                     4:05 PM ET
+  Cowboys @ Rams                       4:25 PM ET
+  Broncos @ Raiders                    4:25 PM ET
+  Lions @ Vikings                      8:20 PM ET (Sunday Night Football)
+  Patriots @ Chiefs                    8:15 PM ET (Monday Night Football)
+
+Week 16:
+  Texans @ Eagles                      8:15 PM ET (Thursday Night Football)
+  Packers @ Bears                      1:00 PM ET (Christmas Day Football)
+  Bills @ Broncos                      4:30 PM ET (Christmas Afternoon Football)
+  Rams @ Seahawks                      8:15 PM ET (Christmas Night Football)
+  Browns @ Ravens                      1:00 PM ET
+  Chargers @ Dolphins                  1:00 PM ET
+  Cardinals @ Saints                   1:00 PM ET
+  Patriots @ Jets                      1:00 PM ET
+  Titans @ Raiders                     4:05 PM ET
+  49ers @ Chiefs                       4:25 PM ET
+  Jaguars @ Cowboys                    8:20 PM ET (Sunday Night Football)
+  Giants @ Lions                       8:15 PM ET (Monday Night Football)
+  Buccaneers @ Falcons                 TBD
+  Bengals @ Colts                      TBD
+  Commanders @ Vikings                 TBD
+  Panthers @ Steelers                  TBD
+
+Week 17:
+  Ravens @ Bengals                     8:15 PM ET (Thursday Night Football)
+  Saints @ Falcons                     1:00 PM ET
+  Seahawks @ Panthers                  1:00 PM ET
+  Colts @ Browns                       1:00 PM ET
+  Giants @ Cowboys                     1:00 PM ET
+  Bills @ Dolphins                     1:00 PM ET
+  Vikings @ Jets                       1:00 PM ET
+  Steelers @ Titans                    1:00 PM ET
+  Raiders @ Cardinals                  4:05 PM ET
+  Lions @ Bears                        4:25 PM ET
+  Eagles @ 49ers                       8:20 PM ET (Sunday Night Football)
+  Texans @ Packers                     8:15 PM ET (Monday Night Football)
+  Commanders @ Jaguars                 TBD
+  Chiefs @ Chargers                    TBD
+  Broncos @ Patriots                   TBD
+  Rams @ Buccaneers                    TBD
+
+Week 18:
+  Chargers @ Broncos                   TBD
+  Lions @ Packers                      TBD
+  Titans @ Texans                      TBD
+  Jaguars @ Colts                      TBD
+  Raiders @ Chiefs                     TBD
+  Seahawks @ Rams                      TBD
+  Bears @ Vikings                      TBD
+  Dolphins @ Patriots                  TBD
+  Buccaneers @ Saints                  TBD
+  Eagles @ Giants                      TBD
+  Cowboys @ Commanders                 TBD
+  49ers @ Cardinals                    TBD
+  Steelers @ Ravens                    TBD
+  Jets @ Bills                         TBD
+  Falcons @ Panthers                   TBD
+  Browns @ Bengals                     TBD
