@@ -4,8 +4,6 @@ A full 18-week NFL schedule built with integer linear programming. Every game is
 
 > **Note:** The official 2026 NFL schedule has been released. A fairness comparison between the predicted and official schedules is now live on the site. A second feature for this website is in development.
 
-🔗 **Live site:** https://g3npar.github.io/nfl-schedule-maker/
-
 ---
 
 ## How it works
