@@ -9,3 +9,4 @@ __pycache__/
 /api/
 /schedule-predictor/src/scrape_real_schedule.py
 /fantasy-watcher/
+/pages/editor.html

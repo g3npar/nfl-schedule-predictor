@@ -22,7 +22,7 @@ A full 18-week NFL schedule built with integer linear programming. Every game is
 
 Once the official schedule was released, a comparison page was built to measure how evenly primetime slots were distributed across all 32 teams in both schedules.
 
-The official schedule was fetched from ESPN's public API and classified by timeslot. Primetime is defined as any game kicking off at 7 PM ET or later, including named slots (SNF, MNF, TNF), night games on Thanksgiving and Christmas, and nighttime international games (Melbourne, Mexico City, etc.). Morning international games and afternoon Thanksgiving/Christmas games are not counted as primetime.
+For the sake of simplicity, primetime games are defined as any game kicking off at 7 PM ET or later, including named slots (SNF, MNF, TNF), night games on Thanksgiving and Christmas, and nighttime international games (Melbourne, Mexico City, etc.). Morning international games and afternoon Thanksgiving/Christmas games are not counted as primetime.
 
 Fairness is measured using the **Gini coefficient**, a value between 0 (perfectly equal) and 1 (maximally concentrated). It's calculated independently for each slot type (TNF, SNF, MNF, overall primetime, 1 PM, 4 PM) and compared side by side.
 
@@ -46,7 +46,6 @@ logos/                            <- team logo images
 pages/
   primetime.html                  <- primetime games breakdown
   comparison.html                 <- predicted vs. official fairness comparison
-  editor.html                     <- schedule editor (WIP)
   schedules/                      <- one page per team (32 total)
 
 schedule-predictor/
