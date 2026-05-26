@@ -1,4 +1,4 @@
-# 2026 NFL Schedule Prediction
+# g3npar's NFL Schedule Predictor
 
 A full 18-week NFL schedule built with integer linear programming. Every game is assigned a week and kickoff time, covering primetime slots (SNF, MNF, TNF), international games, Thanksgiving, Black Friday, and Christmas.
 
